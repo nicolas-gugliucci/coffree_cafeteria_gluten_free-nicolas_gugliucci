@@ -1,0 +1,769 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+}
+
+.color_dark-brown{
+    background-color: #A37C40;      /*#C76831*/
+}
+
+.color_brown{
+    background-color: #B49082;      /*#7A401F*/
+}
+
+.text_1{
+    font-family: 'Aboreto', cursive;
+}
+
+.text_2{
+    font-family: 'Comfortaa', cursive;
+}
+
+.text_3{
+    font-family: 'Raleway', sans-serif;
+}
+
+a{
+    color: black;
+}
+
+.selected{
+    text-decoration: underline;
+    color: #98473E;
+}
+
+.space_evenly{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+#center_center{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+/*-------------------BUTTONS-------------------*/
+button{
+    background-color: #B49082;
+    border-color: #98473E;
+}
+
+/*--------------------CARDS--------------------*/
+.card{
+    border: #98473E 2px solid;
+    border-radius: 20px;
+    overflow: hidden;
+    margin: 20px;
+    height: 480px;
+    width: 233px;
+    color: black;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card h3{
+    font-family: 'Comfortaa', cursive;
+}
+
+.card p{
+    font-family: 'Raleway', sans-serif;
+}
+
+.card button{
+    margin-bottom: 10px;
+}
+
+/*-------------------HEADER--------------------*/
+header{
+    width: 100%;
+    position: sticky;
+    top: 0px;
+    z-index: 2;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+
+#header_logo{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+#header_nav_button{
+    display: flex;
+}
+
+header nav{
+    align-self: flex-end;
+}
+
+header div a img{
+    margin: 0 20px 0 10px;
+}
+
+header nav ul li{
+    display: inline-block;
+    padding: 10px;
+}
+
+header button{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    border: none;
+    margin: 0 10px 0 20px;
+}
+
+/*--------------------INICIO--------------------*/
+.slide1{
+    max-width: 100%;
+    height: auto;
+}
+
+.slide2{
+    display: none;        /*oculta*/
+    max-width: 100%;
+    height: auto;
+}
+
+.slide3{
+    display: none;        /*oculta*/
+    max-width: 100%;
+    height: auto;
+}
+
+#inicio div{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#inicio a{
+    text-align: center;
+    margin: 20px;
+    border: #98473E 2px solid;
+    border-radius: 5%;
+    width: fit-content;
+    height: fit-content;
+    
+}
+
+/*-------------------NOSOTROS-------------------*/
+#nosotros .background{
+    background-image: url("./images/lugar3.png");
+    height: 750px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#nosotros_all{
+    opacity: 0.6;
+    width: 60%;
+    height: auto;
+    border: #A37C40 solid 10px;
+}
+
+#nosotros_all p{
+    text-align: justify;
+}
+
+/*---------------NUESTRASS DELICIAS--------------*/
+
+#nuestras_delicias_container{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#ver_todo{
+    display: none;
+}
+
+
+/*---------------------CARTA---------------------*/
+#carta_nav{
+    width: 100%;
+    height: 45px;
+    position: sticky;
+    top: 54px;
+    z-index: 1;
+    text-align: center;
+}
+
+#carta_nav ul li{
+    display: inline-block;
+    padding: 10px;
+}
+
+#products_container_1, #products_container_2, #products_container_3{
+    margin-top: 40px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    row-gap: 30px;
+    justify-items: center;
+}
+
+#products_container_4{
+    padding: 40px 0 30px 0;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    row-gap: 30px;
+    justify-items: center;
+}
+
+#cafes{
+    padding-top: 105px;
+}
+
+#jugos{
+    padding-top: 105px;
+}
+
+#salados{
+    padding-top: 105px;
+}
+
+#dulces{
+    padding-top: 105px;
+}
+/*-------------------RESERVAS-------------------*/
+#reservas_body{
+    height: 100vh; 
+    background-color: #A37C40 ;
+}
+
+#reservas_footer{
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+#reservas .background{
+    background-image: url("./images/lugar2.png");
+    background-size: cover;
+    width: 100%;
+    height: 520px;
+}
+
+#reservas .color_brown{
+    opacity: 0.6;
+    height: 50%;
+    width: 40%;
+    border: #A37C40 solid 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-content: space-between;
+    align-items: center;
+}
+
+#reservas .color_brown button{
+    align-self: flex-end;
+    margin: 0 5px 5px 0;
+}
+
+#reservas .color_brown nav ol{
+    text-align: center;
+}
+
+#reservas .color_brown form ul{
+    text-align: center;
+}
+
+#reservas .color_brown .align_right{
+    align-self: flex-start;
+    margin-left: 10px;
+}
+
+#reservas .color_brown nav ol li{
+    display: inline-block;
+    padding: 10px;
+}
+
+#reservas .color_brown form ul li{
+    display: flex;
+    padding: 10px;
+}
+
+.options{
+    display: none;
+}
+
+/*-------------------CONTACTO-------------------*/
+
+#contacto_body{
+    height: 100vh; 
+    background-color: #B49082;
+}
+
+#contacto_footer{
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+.contacto_img_container{
+    height: 300px;
+    overflow: hidden;
+}
+
+#contacto img{
+    width: 100%;
+}
+
+#contacto form{
+    padding: 30px 0 30px 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}   
+
+#contacto form div{
+    display: flex;
+    flex-direction: column;
+}
+
+#contacto_div_left{
+    margin-right: 10%;
+}
+
+#contacto_div_right{
+    margin-left: 10%;
+}
+
+#contacto form div button{
+    width: fit-content;
+    align-self: flex-end;
+}
+
+#bigger{
+    width: 470px;
+    height: 140px;
+}
+
+/*--------------------FOOTER--------------------*/
+footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.space_around{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+footer div{
+    margin-left: 10px;
+}
+
+footer div a{
+    display: flex;
+    flex-direction: row;
+}
+
+footer div a img{
+    margin-right: 10px;
+}
+
+footer iframe{
+    padding: 5px;
+    width: 160px;
+    height: 160px;
+}
+
+/*@media screen and (max-width: 1200px) {
+
+}
+
+@media screen and (max-width: 1024px) {
+
+}*/
+
+@media screen and (max-width: 768px) {
+
+    /*---------------NUESTRASS DELICIAS--------------*/
+    #nuestras_delicias_img_4{
+        display: none;  /*Irá como carrusel*/
+    }
+
+    /*---------------------CARTA---------------------*/
+    #products_container_1, #products_container_2{
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+    }
+
+    #products_container_3{
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+    }
+
+    #products_container_4{
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(5, 1fr);
+    }
+
+    /*-------------------RESERVAS-------------------*/
+    #reservas .color_brown{
+        width: fit-content;
+    }
+
+    /*-------------------CONTACTO-------------------*/
+    #contacto img{
+        height: 300px;
+        width: auto;
+    }
+
+    #contacto_div_left{
+        margin-right: 5%;
+    }
+    
+    #contacto_div_right{
+        margin-left: 5%;
+    }
+
+    #bigger{
+        width: 300px;
+    }
+
+}
+
+@media screen and (max-width: 600px) {
+    
+    /*-------------------HEADER--------------------*/
+    header{
+        flex-flow: column wrap;
+        align-items: center;
+    }
+
+    header button{
+        display: none;
+    }
+
+    header nav ul{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    /*---------------NUESTRASS DELICIAS--------------*/
+
+    #nuestras_delicias_img_3{
+        display: none;  /*Irá como carrusel*/
+    }
+
+    /*---------------------CARTA---------------------*/
+   
+    #carta_nav{
+        top: 92px;
+    }
+
+    #products_container_1, #products_container_2, #products_container_3, #products_container_4{
+        justify-items: start;
+    }
+
+    /*-------------------RESERVAS-------------------*/
+    #reservas .color_brown, #reservas button a{
+        font-size: 12px;
+    }
+
+}
+
+@media screen and (max-width: 480px) {
+
+    /*---------------------CARDS---------------------*/
+    .card{
+        border-radius: 0px;
+        height: fit-content;
+        width: 200px;
+        text-align: left;
+        flex-direction: row;
+        font-size: 10px;
+    }
+
+    .card_product_img{
+        height: 60px;
+        width: auto;
+    }
+
+    .card div{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-self: flex-start;
+        width: 120px;
+    }
+
+    .card h3{
+        align-self: flex-start;
+    }
+
+    .card button{
+        border: none;
+    }
+
+    .card button img{
+        display: none;
+    }
+
+    /*--------------------INICIO--------------------*/
+    #inicio div a{
+        display: flex;
+        justify-content: stretch;
+    }
+
+    #inicio div a img{
+        height: 24px;
+        width: 24px;
+    }
+
+    /*-------------------NOSOTROS-------------------*/
+    #nosotros .background{
+        height: 500px;
+    }
+        
+    /*---------------NUESTRASS DELICIAS--------------*/
+
+    #nuestras_delicias_container{
+        justify-content: space-between;
+    }
+
+    #nuestras_delicias_container a img{
+        width: 150px;
+        height: auto;   
+    }
+
+    #nuestras_delicias_container a{
+        width: 500px;
+        height: auto;
+        justify-content: flex-start;
+    }
+
+    #nuestras_delicias_container a div{
+        width: 300px;
+        font-size: 20px;
+    }
+
+    #nuestras_delicias_container a div h3{
+        font-size: 24px;
+    }
+
+    #nuestras_delicias_img_2{
+        display: none;  /*Irán como carrusel*/
+    }
+
+    /*---------------------CARTA---------------------*/
+
+    #products_container_1, #products_container_2{
+        margin-top: 10px;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        row-gap: 0px;
+    }
+
+    #products_container_3{
+        margin-top: 10px;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+        row-gap: 0px;
+    }
+
+    #products_container_4{
+        padding: 10px 0 30px 0;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(5, 1fr);
+        row-gap: 0px;
+    }
+
+    #cafes{
+        padding-top: 137px;
+    }
+
+    #cafes h2{
+        font-size: 20px;
+    }
+
+    #jugos{
+        padding-top: 137px;
+    }
+
+    #jugos h2{
+        font-size: 20px;
+    }
+
+    #salados{
+        padding-top: 137px;
+    }
+
+    #salados h2{
+        font-size: 20px;
+    }
+
+    #dulces{
+        padding-top: 137px;
+    }
+
+    #dulces h2{
+        font-size: 20px;
+    }
+
+    /*-------------------CONTACTO-------------------*/
+    #bigger{
+        width: 200px;
+    }
+
+    #contacto_footer{
+        position: initial ;
+    }
+
+    #reservas_footer{
+        position: initial;
+    }
+
+    /*--------------------FOOTER--------------------*/
+    .space_around{
+        display: none;
+    }
+
+    footer iframe{
+        width: 150px;
+        height: 150px;
+    }
+
+}
+
+
+@media screen and (max-width: 320px) {
+
+    .marco{
+        padding-top: 213px;
+    }
+
+    /*-------------------HEADER--------------------*/
+    #header_logo{
+        flex-flow: column nowrap;
+    }
+
+    #header_logo h1{
+        font-size: 14px;
+    }
+
+    #header_logo img{
+        width: 25px;
+        height: auto;
+    }
+
+    #header_nav_button{
+        align-self: flex-start;
+    }
+
+    header nav ul{
+        flex-wrap: nowrap;
+        flex-direction: column;     /*Van a estar dentro de un desplegable por lo que no es necesario cambiar el padding de las secciones*/
+    }
+
+    header nav ul li{
+        font-size: 12px;
+    }
+
+    /*--------------------INICIO--------------------*/
+    #inicio div{
+        flex-direction: column;
+    }
+
+    /*---------------------CARTA---------------------*/
+    #carta_nav{
+        top: 213px;
+        font-size: 12px;
+        height: 36px;
+    }
+
+    #carta_nav img{
+        width: 12px;
+        height: auto;
+    }
+
+    #products_container_1, #products_container_2{
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(5, 1fr);
+    }
+
+    #products_container_3{
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(7, 1fr);
+    }
+
+    #products_container_4{
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(9, 1fr);
+    }
+
+    #cafes{
+        padding-top: 259px;
+    }
+
+    #jugos{
+        padding-top: 259px;
+    }
+
+    #salados{
+        padding-top: 259px;
+    }
+
+    #dulces{
+        padding-top: 259px;
+    }
+
+    /*-------------------RESERVAS-------------------*/
+    #reservas .color_brown{
+        width: 100%;
+        border: none;
+    }
+
+    #reservas form ul{
+        flex-direction: column;
+    }
+
+    /*-------------------CONTACTO-------------------*/
+    
+    #contacto form{
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    #contacto_div_left{
+        align-self: center;
+        margin-right: 0;
+        width: 60%;
+    }
+    
+    #contacto_div_right{
+        margin: 30px 5px 30px 5px;
+    }
+
+    #bigger{
+        width: 100%;
+        height: 140px;
+    }
+    
+
+}
