@@ -10,11 +10,14 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Aboreto&family=Comfortaa:wght@500&family=Raleway:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
 </head>
+
 <body>
 
 <!-------------------------------------------------HEADER------------------------------------------------>
-    <header class="color_dark-brown">
+    <header class="color_dark-brown_gradient">
         <div id="header_logo">
             <a href="./index.html">
                 <img src="./images/cup.png" alt="">
@@ -38,27 +41,33 @@
     </header>
 
 <!------------------------------------------------INICIO------------------------------------------------->
-    <section id="inicio" class="color_brown">
+    <section id="inicio" class="color_gradient_dark_blue">
         <img class="slide1" src="./images/lugar4.png" alt="">  
         <img class="slide2" src="./images/lugar1.png" alt="">      <!--agregar alt-->
         <img class="slide3" src="./images/lugar5.png" alt="">      <!--agregar alt-->
         <div class="space_evenly">
             <a href="./reservas.html">
-                <img src="./images/reservation.png" alt="">
-                <h3 class="text_2">Reserva YA!</h3>
+                <span>
+                    <img src="./images/reservation.png" alt="">
+                    <h3 class="text_2">Reserva YA!</h3>
+                </span>
             </a>
             <a href="./carta.html">
+              <span>
                 <img src="./images/order-food.png" alt="">
                 <h3 class="text_2">Inicia tu pedido</h3>
+              </span>
             </a>
         </div>
     </section>
 
 <!------------------------------------------------NOSOTROS----------------------------------------------->
+
     <section id="nosotros" class="color_brown">
         <div class="marco"></div>
         <div id="center_center" class="background">
-            <div id="nosotros_all" class="color_brown">
+            <div id="nosotros_all" class="color_brown" data-aos="zoom-in-up"
+            data-aos-duration="1000">
                 <p class="text_3">
                     Coffree nace en 2015 como la primer cafetería 100% para celíacos en Uruguay. Inspirados en hacerles un lugar donde compartir disfrutando de una merienda con olor a café y variedad de delicias que lo acompañan a todos los celíacos por Montevideo. Nos caracteriza un ambiente tranquilo y super iluminado con una hermosa vista a la rambla de Montevideo.
                 </p>
@@ -67,32 +76,32 @@
     </section>
 
 <!-------------------------------------------NUESTRAS DELICIAS-------------------------------------------->
-    <section id="nuestras_delicias" class="color_brown">
+    <section id="nuestras_delicias" class="color_gradient_dark_blue">
         <h2 class="text_2">Nuestras delicias</h2>
         <div>
             <div id="nuestras_delicias_container">
-                <a id="nuestras_delicias_img_1" class="card" href="./carta.html#dulces">
+                <a id="nuestras_delicias_img_1" class="card destacados" href="./carta.html#dulces">
                     <img src="./images/dulces_mug.cake.jpg" alt="">      <!--agregar alt-->
                     <div>
                         <h3>Jelly mug cake</h3>
                         <p>Mug cake de arandanos y frambuesas</p>        
                     </div>
                 </a>
-                <a id="nuestras_delicias_img_2" class="card" href="./carta.html#salados">
+                <a id="nuestras_delicias_img_2" class="card destacados" href="./carta.html#salados">
                     <img src="./images/salados_sandwich.jpg" alt="">      <!--agregar alt-->
                     <div>
                         <h3>Omelette sandwich</h3>
                         <p>Sanguche de omelette con lechuga, tomate, palta y salsa de alioli</p>    
                     </div>
                 </a>
-                <a id="nuestras_delicias_img_3" class="card" href="./carta.html#dulces">
+                <a id="nuestras_delicias_img_3" class="card destacados" href="./carta.html#dulces">
                     <img src="./images/dulces_pancakes.jpg" alt="">      <!--agregar alt-->
                     <div>
                         <h3>Berries pancakes</h3>
                         <p>Panqueques con topping de arandanos, frambuesas y salsa de chocolate</p>    
                     </div>
                 </a>
-                <a id="nuestras_delicias_img_4" class="card" href="./carta.html#dulces">
+                <a id="nuestras_delicias_img_4" class="card destacados" href="./carta.html#dulces">
                     <img src="./images/salados_avocado_hummus_toast.jpg" alt="">      <!--agregar alt-->
                     <div>
                         <h3>Avocado toast</h3>
@@ -128,5 +137,9 @@
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3271.873076035379!2d-56.14197168483093!3d-34.90963458038133!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x959f816b2f6baab7%3A0x4b44c632b43229a4!2sRbla.%20Rep%C3%BAblica%20del%20Per%C3%BA%201413%2C%2011300%20Montevideo%2C%20Departamento%20de%20Montevideo!5e0!3m2!1ses!2suy!4v1660503144864!5m2!1ses!2suy" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
         </iframe>
     </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 </html>
