@@ -64,6 +64,7 @@ button{
 /*--------------------CARDS--------------------*/
 .card{
     border: #98473E 2px solid;
+    background-color: #B49082;
     border-radius: 20px;
     overflow: hidden;
     margin: 20px;
@@ -77,17 +78,45 @@ button{
     align-items: center;
 }
 
+.card img{
+    border-radius: 20px 20px 0 0;
+}
+
+.card div{
+    height: 59.2px;
+}
+
 .card h3{
     font-family: 'Comfortaa', cursive;
+    font-size: 15px;
 }
 
 .card p{
     font-family: 'Raleway', sans-serif;
+    font-size: 13px;
 }
 
 .card button{
     margin-bottom: 10px;
 }
+
+
+.card button {
+	padding: 12px 24px;
+    background-color: #98473E;
+    color: black;
+    border-radius: 7px;
+    transition: transform 250ms cubic-bezier(.2,.8,.4,1);
+  }
+
+.card button:hover {
+	transform: scale(1.10);
+  }
+
+.card button:active {
+	transform: scale(0.9);
+}
+
 
 /*-------------------HEADER--------------------*/
 header{
@@ -222,7 +251,7 @@ header button{
 }
 
 #nosotros_all{
-    opacity: 0.6;
+    opacity: 0.85;
     width: 60%;
     height: auto;
     border: #A37C40 solid 10px;
@@ -286,11 +315,41 @@ header button{
     top: 54px;
     z-index: 1;
     text-align: center;
+    border-bottom: black solid 2px;
+}
+
+.color_gradient_dark_blue h2{
+    color: #A37C40;
 }
 
 #carta_nav ul li{
     display: inline-block;
     padding: 10px;
+} 
+
+
+#carta_nav a{
+	display: inline-block;
+	position: relative;
+	cursor: pointer;
+}
+
+#carta_nav a::after {
+	content: '';
+	position: absolute;
+	width: 100%;
+	transform: scaleX(0);
+	height: 2px;
+	top: 110%;
+	left: 0;
+	background-color: #98473E;
+	transform-origin: bottom right;
+	transition: transform .4s cubic-bezier(.86,0,.07,1);
+}
+  
+#carta_nav a:hover::after {
+	transform: scaleX(1);
+	transform-origin: bottom left;
 }
 
 #products_container_1, #products_container_2, #products_container_3{
