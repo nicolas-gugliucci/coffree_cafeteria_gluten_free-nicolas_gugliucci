@@ -163,6 +163,10 @@ header button{
 }
 
 /*--------------------INICIO--------------------*/
+#inicio{
+    height: 100vh;
+}
+
 .slide1{
     max-width: 100%;
     height: auto;
@@ -194,7 +198,6 @@ header button{
     height: fit-content;
     
 }
-
 
 #inicio a {
 	overflow: hidden;
@@ -405,7 +408,7 @@ header button{
 }
 
 #reservas .color_brown{
-    opacity: 0.6;
+    opacity: 0.85;
     height: 50%;
     width: 40%;
     border: #A37C40 solid 10px;
@@ -448,6 +451,23 @@ header button{
     display: none;
 }
 
+#reservas button {
+    border: black solid 1px;
+    padding: 3px 5px;
+    background-color: #98473E;
+    color: black;
+    border-radius: 5px;
+    transition: transform 250ms cubic-bezier(.2,.8,.4,1);
+}
+
+#reservas button:hover {
+    transform: scale(1.10);
+}
+
+#reservas button:active {
+    transform: scale(0.9);
+}
+
 /*-------------------CONTACTO-------------------*/
 
 #contacto_body{
@@ -477,6 +497,10 @@ header button{
     justify-content: center;
 }   
 
+#contacto p{
+    color: #A37C40;
+}
+
 #contacto form div{
     display: flex;
     flex-direction: column;
@@ -500,12 +524,29 @@ header button{
     height: 140px;
 }
 
+#contacto button {
+    border: black solid 1px;
+    margin-top: 2px;
+    padding: 3px 5px;
+    background-color: #A37C40;
+    color: black;
+    border-radius: 5px;
+    transition: transform 250ms cubic-bezier(.2,.8,.4,1);
+}
+
+#contacto button:hover {
+    transform: scale(1.10);
+}
+
+#contacto button:active {
+    transform: scale(0.9);
+}
+
 /*--------------------FOOTER--------------------*/
 footer{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    border-top: black solid 2px;
 }
 
 .space_around{
@@ -532,14 +573,6 @@ footer iframe{
     width: 160px;
     height: 160px;
 }
-
-/*@media screen and (max-width: 1200px) {
-
-}
-
-@media screen and (max-width: 1024px) {
-
-}*/
 
 @media screen and (max-width: 768px) {
 
