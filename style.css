@@ -745,6 +745,7 @@ footer iframe{
 
     #products_container_1, #products_container_2, #products_container_3, #products_container_4{
         justify-items: start;
+        padding-left: 20px;
     }
 
     /*-------------------RESERVAS-------------------*/
@@ -808,7 +809,7 @@ footer iframe{
     }
         
     /*---------------NUESTRASS DELICIAS--------------*/
-
+/*
     #nuestras_delicias_container{
         justify-content: space-between;
     }
@@ -835,7 +836,7 @@ footer iframe{
 
     #nuestras_delicias_img_2{
         display: none;  /*Irán como carrusel*/
-    }
+   /* }*/
 
     /*---------------------CARTA---------------------*/
 
