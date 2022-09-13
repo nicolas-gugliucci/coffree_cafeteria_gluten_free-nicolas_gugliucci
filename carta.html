@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Coffree - Cafetería Gluten Free</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
     <link rel="stylesheet" href="./style.css">
     <link rel="shortcut icon" href="./images/cup.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -22,14 +23,28 @@
             <h1 class="text_1">Coffree</h1>
         </div>
         <div id="header_nav_button">
-            <nav>
-                <ul class="text_2">
-                    <li><a href="./index.html">Inicio</a></li>
-                    <li><a class="selected" href="./carta.html">Carta</a></li>
-                    <li><a href="./reservas.html">Reservas</a></li>
-                    <li><a href="./index.html#nosotros">Nosotros</a></li>
-                    <li><a href="./contacto.html">Contacto</a></li>
-                </ul>
+            <nav class="navbar navbar-expand-lg bg-light">
+                <div class="container-fluid">
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav text_2">
+                        <li class="nav-item">
+                            <a class="nav-link" href="./index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="./carta.html">Carta</a>
+                        </li>
+                        <li class="nav-item">
+                        <a class="nav-link" href="./reservas.html">Reservas</a>
+                        </li>
+                        <li class="nav-item">
+                        <a class="nav-link" href="./index.html#nosotros">Nosotros</a>
+                        </li>
+                        <li class="nav-item">
+                        <a class="nav-link" href="./contacto.html">Contacto</a>
+                        </li>
+                    </ul>
+                    </div>
+                </div>
             </nav>
             <button>
                 <img src="./images/user.png" alt="">
@@ -38,7 +53,28 @@
     </header>
 
 <!-----------------------------------------------NAVEGACIÓN---------------------------------------------->
-    <nav id="carta_nav" class="color_dark-brown_gradient">
+<nav class="navbar navbar-expand-lg bg-light carta_nav color_dark-brown_gradient">
+    <div class="container-fluid">
+        <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav text_2">
+            <li class="nav-item">
+            <a class="nav-link active" href="#cafes"><img src="./images/icon-coffee.png"> Cafés</a>
+            </li>
+            <li class="nav-item">
+            <a class="nav-link" href="#jugos"><img src="./images/icon-juice.png"> Jugos</a>
+            </li>
+            <li class="nav-item">
+            <a class="nav-link" href="#salados"><img src="./images/icon-sandwich.png"> Salados</a>
+            </li>
+            <li class="nav-item">
+            <a class="nav-link" href="#dulces"><img src="./images/icon-croissant.png"> Dulces</a>
+            </li>
+        </ul>
+        </div>
+    </div>
+</nav>    
+<!--
+<nav id="carta_nav" class="color_dark-brown_gradient">
         <ul class="text_2">
             <li><a href="#cafes"><img src="./images/icon-coffee.png"> Cafés</a></li>
             <li><a href="#jugos"><img src="./images/icon-juice.png"> Jugos</a></li>
@@ -46,11 +82,50 @@
             <li><a href="#dulces"><img src="./images/icon-croissant.png"> Dulces</a></li>
         </ul>
     </nav>
+    -->
 
 <!-------------------------------------------------CAFÉS------------------------------------------------->
     <section id="cafes" class="color_gradient_dark_blue">
         <h2 class="text_2">Cafés</h2>
         <div id="products_container_1">
+            <div class="card text-center" style="width: 18rem;">
+                <img src="./images/cafes_capuchino.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Capuchino</h5>
+                    <button class="card_buttonn">
+                        <a href="#" class="btn btn-primary"><img src="./images/shopping-cart.png"> $123</a>
+                    </button>
+                </div>
+            </div>
+            <div class="card text-center" style="width: 18rem;">
+                <img src="./images/cafes_espresso.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Espresso</h5>
+                    <a href="#" class="btn btn-primary"><img src="./images/shopping-cart.png"> $123</a>
+                </div>
+            </div>
+            <div class="card text-center" style="width: 18rem;">
+                <img src="./images/cafes_coconutvanillaicedcoffee.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Coconut vanilla iced coffee</h5>
+                    <a href="#" class="btn btn-primary"><img src="./images/shopping-cart.png"> $123</a>
+                </div>
+            </div>
+            <div class="card text-center" style="width: 18rem;">
+                <img src="./images/cafes_icedcoffee.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Iced coffee</h5>
+                    <a href="#" class="btn btn-primary"><img src="./images/shopping-cart.png"> $123</a>
+                </div>
+            </div>
+            <div class="card text-center" style="width: 18rem;">
+                <img src="./images/chocolate.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Hot chocolate</h5>
+                    <a href="#" class="btn btn-primary"><img src="./images/shopping-cart.png"> $123</a>
+                </div>
+            </div>
+            <!--
             <div class="card">
                 <img class="card_product_img" src="./images/cafes_capuchino.jpg" alt="">
                 <div>
@@ -86,6 +161,7 @@
                 </div>
                 <button><img src="./images/shopping-cart.png"> $123</button>
             </div>
+            -->
         </div>
     </section>
 
@@ -93,6 +169,42 @@
     <section id="jugos" class="color_gradient_dark_blue">
         <h2 class="text_2">Jugos</h2>
         <div id="products_container_2">
+            <div class="card text-center" style="width: 18rem;">
+                <img src="./images/juice_cucumber.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Cucumber juice</h5>
+                    <a href="#" class="btn btn-primary"><img src="./images/shopping-cart.png"> $123</a>
+                </div>
+            </div>
+            <div class="card text-center" style="width: 18rem;">
+                <img src="./images/juice_fruit.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Pomelo-lime juice</h5>
+                    <a href="#" class="btn btn-primary"><img src="./images/shopping-cart.png"> $123</a>
+                </div>
+            </div>
+            <div class="card text-center" style="width: 18rem;">
+                <img src="./images/juice_greentea.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Black berry & green tea juice</h5>
+                    <a href="#" class="btn btn-primary"><img src="./images/shopping-cart.png"> $123</a>
+                </div>
+            </div>
+            <div class="card text-center" style="width: 18rem;">
+                <img src="./images/juice_pinklemonade.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Pink lemonade</h5>
+                    <a href="#" class="btn btn-primary"><img src="./images/shopping-cart.png"> $123</a>
+                </div>
+            </div>
+            <div class="card text-center" style="width: 18rem;">
+                <img src="./images/juice_tropicalpineapplegreen.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Tropical pineapple green juice</h5>
+                    <a href="#" class="btn btn-primary"><img src="./images/shopping-cart.png"> $123</a>
+                </div>
+            </div>
+            <!--
             <div class="card">
                 <img class="card_product_img" src="./images/juice_cucumber.jpg" alt="">
                 <div>
@@ -128,6 +240,7 @@
                 </div>
                 <button><img src="./images/shopping-cart.png"> $123</button>
             </div>
+        -->
         </div>
     </section>
 
@@ -135,6 +248,62 @@
     <section id="salados" class="color_gradient_dark_blue">
         <h2 class="text_2">Salados</h2>
         <div id="products_container_3">
+            <div class="card text-center" style="width: 18rem;">
+                <img src="./images/salados_avocado_hummus_toast.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Avocado toast</h5>
+                  <p class="card-text">Tostada de palta y hummus.</p>
+                  <a href="#" class="btn btn-primary"><img src="./images/shopping-cart.png"> $123</a>
+                </div>
+              </div>
+              <div class="card text-center" style="width: 18rem;">
+                <img src="./images/salado_painaufromage.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Pain au formage</h5>
+                  <a href="#" class="btn btn-primary"><img src="./images/shopping-cart.png"> $123</a>
+                </div>
+              </div>
+              <div class="card text-center" style="width: 18rem;">
+                <img src="./images/salados_sandwich.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Omelette sandwich</h5>
+                  <p class="card-text">Sanguche de omelette con lechuga, tomate, palta y salsa de alioli.</p>
+                  <a href="#" class="btn btn-primary"><img src="./images/shopping-cart.png"> $123</a>
+                </div>
+              </div>
+              <div class="card text-center" style="width: 18rem;">
+                <img src="./images/salados_sandwich2.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Hummus veggie sandwich</h5>
+                  <p class="card-text">Sanguche con rúcula, tomat, pepino, huevo, aceitunas y hummus.</p>
+                  <a href="#" class="btn btn-primary"><img src="./images/shopping-cart.png"> $123</a>
+                </div>
+              </div>
+              <div class="card text-center" style="width: 18rem;">
+                <img src="./images/salados_sandwich3.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Chiken salad sandwich</h5>
+                  <p class="card-text">Sanguche de pollo con verduras salteadas.</p>
+                  <a href="#" class="btn btn-primary"><img src="./images/shopping-cart.png"> $123</a>
+                </div>
+              </div>
+              <div class="card text-center" style="width: 18rem;">
+                <img src="./images/salados_sandwich4.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Bacon sandwich</h5>
+                  <p class="card-text">Sanguche de panceta con lechuga, tomate, huevo, mozzarella y mayonesa.</p>
+                  <a href="#" class="btn btn-primary"><img src="./images/shopping-cart.png"> $123</a>
+                </div>
+              </div>
+              <div class="card text-center" style="width: 18rem;">
+                <img src="./images/salados_scones.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Cheese scons</h5>
+                  <a href="#" class="btn btn-primary"><img src="./images/shopping-cart.png"> $123</a>
+                </div>
+                
+
+            <!--
             <div class="card">
                 <img class="card_product_img" src="./images/salados_avocado_hummus_toast.jpg" alt="">
                 <div>
@@ -189,6 +358,7 @@
                 </div>
                 <button><img src="./images/shopping-cart.png"> $123</button>
             </div>
+            -->
         </div>
     </section>
 
@@ -196,6 +366,77 @@
     <section id="dulces" class="color_gradient_dark_blue">
         <h2 class="text_2">Dulces</h2>
         <div id="products_container_4">
+            <div class="card text-center" style="width: 18rem;">
+                <img src="./images/dulces_banana.bread.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Banana bread</h5>
+                    <p class="card-text">Dos rodajas de pan de banana con chispas de chocolate.</p>
+                    <a href="#" class="btn btn-primary"><img src="./images/shopping-cart.png"> $123</a>
+                </div>
+            </div>
+            <div class="card text-center" style="width: 18rem;">
+                <img src="./images/dulces_brownie.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Ultra fudgy sea salt caramel brownie</h5>
+                    <a href="#" class="btn btn-primary"><img src="./images/shopping-cart.png"> $123</a>
+                </div>
+            </div>
+            <div class="card text-center" style="width: 18rem;">
+                <img src="./images/dulces_cereal.yogurt.bars.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Frozen yogurt bars</h5>
+                    <p class="card-text">Barra de cereales con topping de yogurt congelado y frambuesas.</p>
+                    <a href="#" class="btn btn-primary"><img src="./images/shopping-cart.png"> $123</a>
+                </div>
+            </div>
+            <div class="card text-center" style="width: 18rem;">
+                <img src="./images/dulces_cinnamon.rolls.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Cinnamon rolls</h5>
+                    <a href="#" class="btn btn-primary"><img src="./images/shopping-cart.png"> $123</a>
+                </div>
+            </div>
+            <div class="card text-center" style="width: 18rem;">
+                <img src="./images/dulces_cookies.blueberry.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Blueberry almond cookies</h5>
+                    <p class="card-text">Cookies de arándanos, almendras y chispas de chocolate.</p>
+                    <a href="#" class="btn btn-primary"><img src="./images/shopping-cart.png"> $123</a>
+                </div>
+            </div>
+            <div class="card text-center" style="width: 18rem;">
+                <img src="./images/dulces_muffins.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Banana coffee muffins</h5>
+                    <p class="card-text">Muffins de banana y café con nueces.</p>
+                    <a href="#" class="btn btn-primary"><img src="./images/shopping-cart.png"> $123</a>
+                </div>
+            </div>
+            <div class="card text-center" style="width: 18rem;">
+                <img src="./images/dulces_mug.cake.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Jelly mug cake</h5>
+                    <p class="card-text">Mug cake de arandanos y frambuesas.</p>
+                    <a href="#" class="btn btn-primary"><img src="./images/shopping-cart.png"> $123</a>
+                </div>
+            </div>
+            <div class="card text-center" style="width: 18rem;">
+                <img src="./images/dulces_pancakes.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Berries pancakes</h5>
+                    <p class="card-text">Panqueques con topping de arandanos, frambuesas y salsa de chocolate.</p>
+                    <a href="#" class="btn btn-primary"><img src="./images/shopping-cart.png"> $123</a>
+                </div>
+            </div>
+            <div class="card text-center" style="width: 18rem;">
+                <img src="./images/dulces_waffles.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Waffles</h5>
+                    <p class="card-text">Waffles con crema chantilly y frutos rojos.</p>
+                    <a href="#" class="btn btn-primary"><img src="./images/shopping-cart.png"> $123</a>
+                </div>
+            </div>
+            <!--
             <div class="card">
                 <img class="card_product_img" src="./images/dulces_banana.bread.jpg" alt="">
                 <div>
@@ -266,32 +507,37 @@
                 </div>
                 <button><img src="./images/shopping-cart.png"> $123</button>
             </div>
+        -->
         </div>
     </section>
 
 <!-------------------------------------------------FOOTER------------------------------------------------>
-<footer class="color_dark-brown">
-    <div>
-        <h3 class="text_2">Horarios:</h3>
-        <p class="text_3">Lun-Vie: 08:00 - 11:30 y 16:00 - 20:00</p>
-        <p class="text_3">Sab: 08:00 - 13:00</p>
-    </div>
-    <div class="space_around">
-        <a target="_blank" href="https://www.google.es/maps/place/Rbla.+Rep%C3%BAblica+del+Per%C3%BA+1413,+11300+Montevideo,+Departamento+de+Montevideo/@-34.9096346,-56.1413531,17z/data=!3m1!4b1!4m5!3m4!1s0x959f816b2f6baab7:0x4b44c632b43229a4!8m2!3d-34.9096346!4d-56.139783">
-            <img src="./images/location.png">
-            <p class="text_3">Rbla, República del Perú 1413, esq Basilio Pereira de la Luz</p>
-        </a>
-        <a class="text_3" target="_blank" href="tel:+59898765432">
-            <img src="./images/telephone.png">
-            <p>+598 98 765 432</p>
-        </a>
-        <a target="_blank" href="https://www.instagram.com/nico_gugliucci/">             <!--agregar instagram link-->
-            <img src="./images/instagram.png">
-            <p class="text_3">@direccion_de_instagram</p>
-        </a>
-    </div>
-    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3271.873076035379!2d-56.14197168483093!3d-34.90963458038133!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x959f816b2f6baab7%3A0x4b44c632b43229a4!2sRbla.%20Rep%C3%BAblica%20del%20Per%C3%BA%201413%2C%2011300%20Montevideo%2C%20Departamento%20de%20Montevideo!5e0!3m2!1ses!2suy!4v1660503144864!5m2!1ses!2suy" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
-    </iframe>
-</footer>
+    <footer class="color_dark-brown">
+        <div>
+            <h3 class="text_2">Horarios:</h3>
+            <p class="text_3">Lun-Vie: 08:00 - 11:30 y 16:00 - 20:00</p>
+            <p class="text_3">Sab: 08:00 - 13:00</p>
+        </div>
+        <div class="space_around">
+            <a target="_blank" href="https://www.google.es/maps/place/Rbla.+Rep%C3%BAblica+del+Per%C3%BA+1413,+11300+Montevideo,+Departamento+de+Montevideo/@-34.9096346,-56.1413531,17z/data=!3m1!4b1!4m5!3m4!1s0x959f816b2f6baab7:0x4b44c632b43229a4!8m2!3d-34.9096346!4d-56.139783">
+                <img src="./images/location.png">
+                <p class="text_3">Rbla, República del Perú 1413, esq Basilio Pereira de la Luz</p>
+            </a>
+            <a class="text_3" target="_blank" href="tel:+59898765432">
+                <img src="./images/telephone.png">
+                <p>+598 98 765 432</p>
+            </a>
+            <a target="_blank" href="https://www.instagram.com/nico_gugliucci/">             <!--agregar instagram link-->
+                <img src="./images/instagram.png">
+                <p class="text_3">@direccion_de_instagram</p>
+            </a>
+        </div>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3271.873076035379!2d-56.14197168483093!3d-34.90963458038133!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x959f816b2f6baab7%3A0x4b44c632b43229a4!2sRbla.%20Rep%C3%BAblica%20del%20Per%C3%BA%201413%2C%2011300%20Montevideo%2C%20Departamento%20de%20Montevideo!5e0!3m2!1ses!2suy!4v1660503144864!5m2!1ses!2suy" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+    </footer>
+    <script>
+        AOS.init();
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
 </body>
 </html>
