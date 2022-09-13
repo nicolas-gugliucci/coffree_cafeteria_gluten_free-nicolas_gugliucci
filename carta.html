@@ -23,51 +23,54 @@
             <h1 class="text_1">Coffree</h1>
         </div>
         <div id="header_nav_button">
-            <nav class="navbar navbar-expand-lg bg-light">
+            <nav class="navbar navbar_popio navbar-expand-md bg-light bg-light-propio">
                 <div class="container-fluid">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
                     <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav text_2">
                         <li class="nav-item">
-                            <a class="nav-link" href="./index.html">Inicio</a>
+                            <a class="nav-link nav-link-propio" href="./index.html">Inicio</a>
                         </li>
                         <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="./carta.html">Carta</a>
+                        <a class="nav-link active nav-link-propio active-propio" aria-current="page" href="./carta.html">Carta</a>
                         </li>
                         <li class="nav-item">
-                        <a class="nav-link" href="./reservas.html">Reservas</a>
+                        <a class="nav-link nav-link-propio" href="./reservas.html">Reservas</a>
                         </li>
                         <li class="nav-item">
-                        <a class="nav-link" href="./index.html#nosotros">Nosotros</a>
+                        <a class="nav-link nav-link-propio" href="./index.html#nosotros">Nosotros</a>
                         </li>
                         <li class="nav-item">
-                        <a class="nav-link" href="./contacto.html">Contacto</a>
+                        <a class="nav-link nav-link-propio" href="./contacto.html">Contacto</a>
                         </li>
                     </ul>
                     </div>
                 </div>
             </nav>
-            <button>
+            <button class="login">
                 <img src="./images/user.png" alt="">
             </button>
         </div>
     </header>
 
 <!-----------------------------------------------NAVEGACIÓN---------------------------------------------->
-<nav class="navbar navbar-expand-lg bg-light carta_nav color_dark-brown_gradient">
+<nav class="navbar navbar-propio navbar-expand-sm bg-light carta_nav color_dark-brown_gradient">
     <div class="container-fluid">
-        <div class="collapse navbar-collapse" id="navbarNav">
+        <div id="navbarNav">
         <ul class="navbar-nav text_2">
             <li class="nav-item">
-            <a class="nav-link active" href="#cafes"><img src="./images/icon-coffee.png"> Cafés</a>
+            <a class="nav-link" href="#cafes" aria-current="true"><img src="./images/icon-coffee.png"> Cafés</a>
             </li>
             <li class="nav-item">
-            <a class="nav-link" href="#jugos"><img src="./images/icon-juice.png"> Jugos</a>
+            <a class="nav-link" href="#jugos" aria-current="true"><img src="./images/icon-juice.png"> Jugos</a>
             </li>
             <li class="nav-item">
-            <a class="nav-link" href="#salados"><img src="./images/icon-sandwich.png"> Salados</a>
+            <a class="nav-link" href="#salados" aria-current="true"><img src="./images/icon-sandwich.png"> Salados</a>
             </li>
             <li class="nav-item">
-            <a class="nav-link" href="#dulces"><img src="./images/icon-croissant.png"> Dulces</a>
+            <a class="nav-link" href="#dulces" aria-current="true"><img src="./images/icon-croissant.png"> Dulces</a>
             </li>
         </ul>
         </div>
@@ -92,8 +95,8 @@
                 <img src="./images/cafes_capuchino.jpg" class="card-img-top" alt="...">
                 <div class="card-body">
                     <h5 class="card-title">Capuchino</h5>
-                    <button class="card_buttonn">
-                        <a href="#" class="btn btn-primary"><img src="./images/shopping-cart.png"> $123</a>
+                    <button class="card_buttonn btn btn-primary">
+                        <img src="./images/shopping-cart.png"> $123
                     </button>
                 </div>
             </div>
@@ -101,28 +104,36 @@
                 <img src="./images/cafes_espresso.jpg" class="card-img-top" alt="...">
                 <div class="card-body">
                     <h5 class="card-title">Espresso</h5>
-                    <a href="#" class="btn btn-primary"><img src="./images/shopping-cart.png"> $123</a>
+                    <button class="card_buttonn btn btn-primary">
+                        <img src="./images/shopping-cart.png"> $123
+                    </button>
                 </div>
             </div>
             <div class="card text-center" style="width: 18rem;">
                 <img src="./images/cafes_coconutvanillaicedcoffee.jpg" class="card-img-top" alt="...">
                 <div class="card-body">
                     <h5 class="card-title">Coconut vanilla iced coffee</h5>
-                    <a href="#" class="btn btn-primary"><img src="./images/shopping-cart.png"> $123</a>
+                    <button class="card_buttonn btn btn-primary">
+                        <img src="./images/shopping-cart.png"> $123
+                    </button>
                 </div>
             </div>
             <div class="card text-center" style="width: 18rem;">
                 <img src="./images/cafes_icedcoffee.jpg" class="card-img-top" alt="...">
                 <div class="card-body">
                     <h5 class="card-title">Iced coffee</h5>
-                    <a href="#" class="btn btn-primary"><img src="./images/shopping-cart.png"> $123</a>
+                    <button class="card_buttonn btn btn-primary">
+                        <img src="./images/shopping-cart.png"> $123
+                    </button>
                 </div>
             </div>
             <div class="card text-center" style="width: 18rem;">
                 <img src="./images/chocolate.jpg" class="card-img-top" alt="...">
                 <div class="card-body">
                     <h5 class="card-title">Hot chocolate</h5>
-                    <a href="#" class="btn btn-primary"><img src="./images/shopping-cart.png"> $123</a>
+                    <button class="card_buttonn btn btn-primary">
+                        <img src="./images/shopping-cart.png"> $123
+                    </button>
                 </div>
             </div>
             <!--
@@ -173,35 +184,45 @@
                 <img src="./images/juice_cucumber.jpg" class="card-img-top" alt="...">
                 <div class="card-body">
                     <h5 class="card-title">Cucumber juice</h5>
-                    <a href="#" class="btn btn-primary"><img src="./images/shopping-cart.png"> $123</a>
+                    <button class="card_buttonn btn btn-primary">
+                        <img src="./images/shopping-cart.png"> $123
+                    </button>
                 </div>
             </div>
             <div class="card text-center" style="width: 18rem;">
                 <img src="./images/juice_fruit.jpg" class="card-img-top" alt="...">
                 <div class="card-body">
                     <h5 class="card-title">Pomelo-lime juice</h5>
-                    <a href="#" class="btn btn-primary"><img src="./images/shopping-cart.png"> $123</a>
+                    <button class="card_buttonn btn btn-primary">
+                        <img src="./images/shopping-cart.png"> $123
+                    </button>
                 </div>
             </div>
             <div class="card text-center" style="width: 18rem;">
                 <img src="./images/juice_greentea.jpg" class="card-img-top" alt="...">
                 <div class="card-body">
                     <h5 class="card-title">Black berry & green tea juice</h5>
-                    <a href="#" class="btn btn-primary"><img src="./images/shopping-cart.png"> $123</a>
+                    <button class="card_buttonn btn btn-primary">
+                        <img src="./images/shopping-cart.png"> $123
+                    </button>
                 </div>
             </div>
             <div class="card text-center" style="width: 18rem;">
                 <img src="./images/juice_pinklemonade.jpg" class="card-img-top" alt="...">
                 <div class="card-body">
                     <h5 class="card-title">Pink lemonade</h5>
-                    <a href="#" class="btn btn-primary"><img src="./images/shopping-cart.png"> $123</a>
+                    <button class="card_buttonn btn btn-primary">
+                        <img src="./images/shopping-cart.png"> $123
+                    </button>
                 </div>
             </div>
             <div class="card text-center" style="width: 18rem;">
                 <img src="./images/juice_tropicalpineapplegreen.jpg" class="card-img-top" alt="...">
                 <div class="card-body">
                     <h5 class="card-title">Tropical pineapple green juice</h5>
-                    <a href="#" class="btn btn-primary"><img src="./images/shopping-cart.png"> $123</a>
+                    <button class="card_buttonn btn btn-primary">
+                        <img src="./images/shopping-cart.png"> $123
+                    </button>
                 </div>
             </div>
             <!--
@@ -251,57 +272,71 @@
             <div class="card text-center" style="width: 18rem;">
                 <img src="./images/salados_avocado_hummus_toast.jpg" class="card-img-top" alt="...">
                 <div class="card-body">
-                  <h5 class="card-title">Avocado toast</h5>
-                  <p class="card-text">Tostada de palta y hummus.</p>
-                  <a href="#" class="btn btn-primary"><img src="./images/shopping-cart.png"> $123</a>
+                    <h5 class="card-title">Avocado toast</h5>
+                    <p class="card-text">Tostada de palta y hummus.</p>
+                    <button class="card_buttonn btn btn-primary">
+                        <img src="./images/shopping-cart.png"> $123
+                    </button>
                 </div>
-              </div>
-              <div class="card text-center" style="width: 18rem;">
-                <img src="./images/salado_painaufromage.jpg" class="card-img-top" alt="...">
-                <div class="card-body">
-                  <h5 class="card-title">Pain au formage</h5>
-                  <a href="#" class="btn btn-primary"><img src="./images/shopping-cart.png"> $123</a>
-                </div>
-              </div>
-              <div class="card text-center" style="width: 18rem;">
+            </div>
+                <div class="card text-center" style="width: 18rem;">
+                    <img src="./images/salado_painaufromage.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Pain au formage</h5>
+                        <button class="card_buttonn btn btn-primary">
+                            <img src="./images/shopping-cart.png"> $123
+                        </button>
+                    </div>
+            </div>
+            <div class="card text-center" style="width: 18rem;">
                 <img src="./images/salados_sandwich.jpg" class="card-img-top" alt="...">
                 <div class="card-body">
-                  <h5 class="card-title">Omelette sandwich</h5>
-                  <p class="card-text">Sanguche de omelette con lechuga, tomate, palta y salsa de alioli.</p>
-                  <a href="#" class="btn btn-primary"><img src="./images/shopping-cart.png"> $123</a>
+                    <h5 class="card-title">Omelette sandwich</h5>
+                    <p class="card-text">Sanguche de omelette con lechuga, tomate, palta y salsa de alioli.</p>
+                    <button class="card_buttonn btn btn-primary">
+                        <img src="./images/shopping-cart.png"> $123
+                    </button>
                 </div>
-              </div>
-              <div class="card text-center" style="width: 18rem;">
+            </div>
+            <div class="card text-center" style="width: 18rem;">
                 <img src="./images/salados_sandwich2.jpg" class="card-img-top" alt="...">
                 <div class="card-body">
-                  <h5 class="card-title">Hummus veggie sandwich</h5>
-                  <p class="card-text">Sanguche con rúcula, tomat, pepino, huevo, aceitunas y hummus.</p>
-                  <a href="#" class="btn btn-primary"><img src="./images/shopping-cart.png"> $123</a>
+                    <h5 class="card-title">Hummus veggie sandwich</h5>
+                    <p class="card-text">Sanguche con rúcula, tomat, pepino, huevo, aceitunas y hummus.</p>
+                    <button class="card_buttonn btn btn-primary">
+                        <img src="./images/shopping-cart.png"> $123
+                    </button>
                 </div>
-              </div>
-              <div class="card text-center" style="width: 18rem;">
+            </div>
+            <div class="card text-center" style="width: 18rem;">
                 <img src="./images/salados_sandwich3.jpg" class="card-img-top" alt="...">
                 <div class="card-body">
-                  <h5 class="card-title">Chiken salad sandwich</h5>
-                  <p class="card-text">Sanguche de pollo con verduras salteadas.</p>
-                  <a href="#" class="btn btn-primary"><img src="./images/shopping-cart.png"> $123</a>
+                    <h5 class="card-title">Chiken salad sandwich</h5>
+                    <p class="card-text">Sanguche de pollo con verduras salteadas.</p>
+                    <button class="card_buttonn btn btn-primary">
+                        <img src="./images/shopping-cart.png"> $123
+                    </button>
                 </div>
-              </div>
-              <div class="card text-center" style="width: 18rem;">
+            </div>
+            <div class="card text-center" style="width: 18rem;">
                 <img src="./images/salados_sandwich4.jpg" class="card-img-top" alt="...">
                 <div class="card-body">
-                  <h5 class="card-title">Bacon sandwich</h5>
-                  <p class="card-text">Sanguche de panceta con lechuga, tomate, huevo, mozzarella y mayonesa.</p>
-                  <a href="#" class="btn btn-primary"><img src="./images/shopping-cart.png"> $123</a>
+                    <h5 class="card-title">Bacon sandwich</h5>
+                    <p class="card-text">Sanguche de panceta con lechuga, tomate, huevo, mozzarella y mayonesa.</p>
+                    <button class="card_buttonn btn btn-primary">
+                        <img src="./images/shopping-cart.png"> $123
+                    </button>
                 </div>
-              </div>
-              <div class="card text-center" style="width: 18rem;">
+            </div>
+            <div class="card text-center" style="width: 18rem;">
                 <img src="./images/salados_scones.jpg" class="card-img-top" alt="...">
                 <div class="card-body">
-                  <h5 class="card-title">Cheese scons</h5>
-                  <a href="#" class="btn btn-primary"><img src="./images/shopping-cart.png"> $123</a>
+                    <h5 class="card-title">Cheese scons</h5>
+                    <button class="card_buttonn btn btn-primary">
+                        <img src="./images/shopping-cart.png"> $123
+                    </button>
                 </div>
-                
+            </div>  
 
             <!--
             <div class="card">
@@ -371,14 +406,18 @@
                 <div class="card-body">
                     <h5 class="card-title">Banana bread</h5>
                     <p class="card-text">Dos rodajas de pan de banana con chispas de chocolate.</p>
-                    <a href="#" class="btn btn-primary"><img src="./images/shopping-cart.png"> $123</a>
+                    <button class="card_buttonn btn btn-primary">
+                        <img src="./images/shopping-cart.png"> $123
+                    </button>
                 </div>
             </div>
             <div class="card text-center" style="width: 18rem;">
                 <img src="./images/dulces_brownie.jpg" class="card-img-top" alt="...">
                 <div class="card-body">
                     <h5 class="card-title">Ultra fudgy sea salt caramel brownie</h5>
-                    <a href="#" class="btn btn-primary"><img src="./images/shopping-cart.png"> $123</a>
+                    <button class="card_buttonn btn btn-primary">
+                        <img src="./images/shopping-cart.png"> $123
+                    </button>
                 </div>
             </div>
             <div class="card text-center" style="width: 18rem;">
@@ -386,14 +425,18 @@
                 <div class="card-body">
                     <h5 class="card-title">Frozen yogurt bars</h5>
                     <p class="card-text">Barra de cereales con topping de yogurt congelado y frambuesas.</p>
-                    <a href="#" class="btn btn-primary"><img src="./images/shopping-cart.png"> $123</a>
+                    <button class="card_buttonn btn btn-primary">
+                        <img src="./images/shopping-cart.png"> $123
+                    </button>
                 </div>
             </div>
             <div class="card text-center" style="width: 18rem;">
                 <img src="./images/dulces_cinnamon.rolls.jpg" class="card-img-top" alt="...">
                 <div class="card-body">
                     <h5 class="card-title">Cinnamon rolls</h5>
-                    <a href="#" class="btn btn-primary"><img src="./images/shopping-cart.png"> $123</a>
+                    <button class="card_buttonn btn btn-primary">
+                        <img src="./images/shopping-cart.png"> $123
+                    </button>
                 </div>
             </div>
             <div class="card text-center" style="width: 18rem;">
@@ -401,7 +444,9 @@
                 <div class="card-body">
                     <h5 class="card-title">Blueberry almond cookies</h5>
                     <p class="card-text">Cookies de arándanos, almendras y chispas de chocolate.</p>
-                    <a href="#" class="btn btn-primary"><img src="./images/shopping-cart.png"> $123</a>
+                    <button class="card_buttonn btn btn-primary">
+                        <img src="./images/shopping-cart.png"> $123
+                    </button>
                 </div>
             </div>
             <div class="card text-center" style="width: 18rem;">
@@ -409,7 +454,9 @@
                 <div class="card-body">
                     <h5 class="card-title">Banana coffee muffins</h5>
                     <p class="card-text">Muffins de banana y café con nueces.</p>
-                    <a href="#" class="btn btn-primary"><img src="./images/shopping-cart.png"> $123</a>
+                    <button class="card_buttonn btn btn-primary">
+                        <img src="./images/shopping-cart.png"> $123
+                    </button>
                 </div>
             </div>
             <div class="card text-center" style="width: 18rem;">
@@ -417,7 +464,9 @@
                 <div class="card-body">
                     <h5 class="card-title">Jelly mug cake</h5>
                     <p class="card-text">Mug cake de arandanos y frambuesas.</p>
-                    <a href="#" class="btn btn-primary"><img src="./images/shopping-cart.png"> $123</a>
+                    <button class="card_buttonn btn btn-primary">
+                        <img src="./images/shopping-cart.png"> $123
+                    </button>
                 </div>
             </div>
             <div class="card text-center" style="width: 18rem;">
@@ -425,7 +474,9 @@
                 <div class="card-body">
                     <h5 class="card-title">Berries pancakes</h5>
                     <p class="card-text">Panqueques con topping de arandanos, frambuesas y salsa de chocolate.</p>
-                    <a href="#" class="btn btn-primary"><img src="./images/shopping-cart.png"> $123</a>
+                    <button class="card_buttonn btn btn-primary">
+                        <img src="./images/shopping-cart.png"> $123
+                    </button>
                 </div>
             </div>
             <div class="card text-center" style="width: 18rem;">
@@ -433,7 +484,9 @@
                 <div class="card-body">
                     <h5 class="card-title">Waffles</h5>
                     <p class="card-text">Waffles con crema chantilly y frutos rojos.</p>
-                    <a href="#" class="btn btn-primary"><img src="./images/shopping-cart.png"> $123</a>
+                    <button class="card_buttonn btn btn-primary">
+                        <img src="./images/shopping-cart.png"> $123
+                    </button>
                 </div>
             </div>
             <!--

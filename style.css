@@ -11,17 +11,18 @@
     line-height: normal;
 }
 
+a{
+    color: black;
+    text-decoration: none;
+}
+
 a:hover {
     color: initial;
 }
-
-.selected:hover {
-    color: #98473E;
-}
-
+/*
 dl, ol, ul {
     margin: 0;
-}
+}*/
 
 .color_dark-brown_gradient{
     background-image: linear-gradient(to right, #A37C40 0%, #B49082 100%);
@@ -51,14 +52,16 @@ dl, ol, ul {
     font-family: 'Raleway', sans-serif;
 }
 
-a{
-    color: black;
-}
-
 .selected{
     text-decoration: underline;
     color: #98473E;
 }
+
+/*
+.selected:hover {
+    color: #98473E;
+}*//*???*/
+
 
 .space_evenly{
     display: flex;
@@ -80,7 +83,7 @@ button{
 }
 
 /*--------------------CARDS--------------------*/
-.cardi{
+/*.cardi{
     border: #98473E 2px solid;
     background-color: #B49082;
     border-radius: 20px;
@@ -94,37 +97,22 @@ button{
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-}
+}*/
 
-.cardi img{
-    border-radius: 20px 20px 0 0;
-}
-
-.cardi div{
-    height: 59.2px;
-}
-
-.cardi h3{
-    font-family: 'Comfortaa', cursive;
-    font-size: 15px;
-}
-
-.cardi p{
-    font-family: 'Raleway', sans-serif;
-    font-size: 13px;
-}
-
-.card_buttonn{
-    margin-bottom: 10px;
-}
-
+.btn:first-child:hover, :not(.btn-check)+.btn:hover {
+    color: black;
+    background-color: #98473E;
+}/*Anda a saber*/
 
 .card_buttonn {
+    width: 150px;
 	padding: 12px 24px;
     background-color: #98473E;
+    border: #98473E;
     color: black;
     border-radius: 7px;
     transition: transform 250ms cubic-bezier(.2,.8,.4,1);
+    margin-bottom: 10px;
   }
 
 .card_buttonn:hover {
@@ -139,9 +127,21 @@ button{
     background-color: #B49082;
 }
 
-.btn{
-    border: #98473E;
-    background-color: #98473E;
+.card h5{
+    font-family: 'Comfortaa', cursive;
+    font-size: 18px;
+}
+
+.card p{
+    font-family: 'Raleway', sans-serif;
+    font-size: 15px;
+}
+
+.card-body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
 }
 
 /*-------------------HEADER--------------------*/
@@ -168,18 +168,22 @@ header{
     align-items: center;
 }
 
-.bg-light {
+.bg-light-propio {
     background-color: transparent !important;
 }
 
-.navbar-nav .nav-link.active, .navbar-nav .show>.nav-link {
+.active-propio{
     text-decoration: underline;
-    color: #98473E;
+    color: #98473E !important;
 }
 
-.nav-link {
+.nav-link-propio{
     color: var(--bs-body-color);
     font-size: 16px;
+}
+
+.nav-link-propio:hover{
+    color: var(--bs-body-color);
 }
 
 header nav{
@@ -229,10 +233,6 @@ header button{
 
 .carousel-control-next-icon {
     background: none;
-}
-
-a{
-    text-decoration: none;
 }
 
 #inicio a{
@@ -356,31 +356,31 @@ a{
 /*---------------------CARTA---------------------*/
 .carta_nav{
     width: 100%;
-    height: 45px;
     position: sticky;
-    display: flex;
-    top: 54px;
+    top: 78px;
     z-index: 1;
     text-align: center;
+    display: flex;
+    justify-content: center;
     border-bottom: black solid 2px;
 }
-.carta_nav div{
-    justify-content: center;/*nach*/
-    align-items: center;
-}
-.navbar-expand-lg .navbar-collapse {/*y*/
+
+.carta_nav .container-fluid{
     justify-content: center;
 }
+
+/*.navbar-propio {
+    padding: 0;
+}*/
 
 .color_gradient_dark_blue h2{
     color: #A37C40;
 }
 
-.carta_nav ul li{
+/*.carta_nav ul li{
     display: inline-block;
     padding: 10px;
-} 
-
+} */
 
 .carta_nav a{
 	display: inline-block;
@@ -425,19 +425,19 @@ a{
 }
 
 #cafes{
-    padding-top: 105px;
+    padding-top: 125px;
 }
 
 #jugos{
-    padding-top: 105px;
+    padding-top: 125px;
 }
 
 #salados{
-    padding-top: 105px;
+    padding-top: 125px;
 }
 
 #dulces{
-    padding-top: 105px;
+    padding-top: 125px;
 }
 /*-------------------RESERVAS-------------------*/
 #reservas_body{
@@ -626,14 +626,24 @@ footer iframe{
     height: 160px;
 }
 
-@media screen and (max-width: 768px) {
-
-    /*---------------NUESTRASS DELICIAS--------------*/
-    #nuestras_delicias_img_4{
-        display: none;  /*Irá como carrusel*/
+@media screen and (max-width: 1200px) {
+    #products_container_1, #products_container_2{
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, 1fr);
     }
 
-    /*---------------------CARTA---------------------*/
+    #products_container_3{
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+    }
+
+    #products_container_4{
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+    }
+}
+
+@media screen and (max-width: 930px) {
     #products_container_1, #products_container_2{
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(3, 1fr);
@@ -647,6 +657,18 @@ footer iframe{
     #products_container_4{
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(5, 1fr);
+    }
+}
+
+@media screen and (max-width: 768px) {
+
+    /*---------------NUESTRASS DELICIAS--------------*/
+    #nuestras_delicias_img_4{
+        display: none;  /*Irá como carrusel*/
+    }
+
+    .carta_nav{
+        top: 68px;
     }
 
     /*-------------------RESERVAS-------------------*/
@@ -674,23 +696,40 @@ footer iframe{
 
 }
 
+@media screen and (max-width: 620px) {
+    #products_container_1, #products_container_2{
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(5, 1fr);
+    }
+
+    #products_container_3{
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(7, 1fr);
+    }
+
+    #products_container_4{
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(9, 1fr);
+    }
+}
+
 @media screen and (max-width: 600px) {
     
     /*-------------------HEADER--------------------*/
-    header{
+    /*header{
         flex-flow: column wrap;
         align-items: center;
-    }
+    }*/
 
-    header button{
+    header .login{
         display: none;
     }
 
-    header nav ul{
+    /*header nav ul{
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
-    }
+    }/*
 
     /*---------------NUESTRASS DELICIAS--------------*/
 
@@ -718,7 +757,7 @@ footer iframe{
 @media screen and (max-width: 480px) {
 
     /*---------------------CARDS---------------------*/
-    .card{
+    /*.card{
         border-radius: 0px;
         height: fit-content;
         width: 200px;
@@ -750,7 +789,7 @@ footer iframe{
 
     .card button img{
         display: none;
-    }
+    }*/
 
     /*--------------------INICIO--------------------*/
     #inicio div a{
@@ -800,7 +839,7 @@ footer iframe{
 
     /*---------------------CARTA---------------------*/
 
-    #products_container_1, #products_container_2{
+    /*#products_container_1, #products_container_2{
         margin-top: 10px;
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(3, 1fr);
@@ -819,7 +858,7 @@ footer iframe{
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(5, 1fr);
         row-gap: 0px;
-    }
+    }*/
 
     #cafes{
         padding-top: 137px;
@@ -929,7 +968,7 @@ footer iframe{
         height: auto;
     }
 
-    #products_container_1, #products_container_2{
+    /*#products_container_1, #products_container_2{
         grid-template-columns: repeat(1, 1fr);
         grid-template-rows: repeat(5, 1fr);
     }
@@ -942,7 +981,7 @@ footer iframe{
     #products_container_4{
         grid-template-columns: repeat(1, 1fr);
         grid-template-rows: repeat(9, 1fr);
-    }
+    }*/
 
     #cafes{
         padding-top: 259px;
