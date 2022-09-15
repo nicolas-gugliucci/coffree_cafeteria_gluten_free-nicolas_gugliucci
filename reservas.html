@@ -68,20 +68,31 @@
                     </ol>
                 </nav>
                 <form>
-                    <ul class="text_2">
-                        <li>Cantidad de personas</li>
-                            <ul class="options">
-                                <li>1</li>
-                                <li>2</li>
-                                <li>3</li>
-                                <li>4</li>
-                                <li>5+</li>
-                            </ul>
-                        <li>Desayuno</li>
-                            <ul class="options">
-                                <li>Merienda</li>
-                            </ul>
-                    </ul>
+                    <div class="row">
+                        <div class="col">
+                            <div class="form-floating">
+                                <select class="form-select text_2" id="floatingSelect" aria-label="Floating label select example">
+                                    <option value="">Escoger una</option>
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5+</option>
+                                </select>
+                                <label for="floatingSelect">Cantidad de personas</label>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="form-floating">
+                                <select class="form-select text_2" id="floatingSelect" aria-label="Floating label select example">
+                                    <option value="">Escoger una</option>
+                                    <option value="1">Desayuno</option>
+                                    <option value="2">Merienda</option>
+                                </select>
+                                <label for="floatingSelect">Opción</label>
+                            </div>
+                        </div>
+                    </div>
                     <!--INSERTAR CALENDARIO-->
                 </form>
                 <button class="text_2">

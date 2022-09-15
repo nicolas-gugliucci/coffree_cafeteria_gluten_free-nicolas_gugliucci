@@ -62,16 +62,24 @@
         </div>
         <form>
             <div id="contacto_div_left">
-                <p>Nombre</p>
-                <textarea class="text_3"></textarea>
-                <p>Apellido</p>
-                <textarea class="text_3"></textarea>
-                <p>Email</p>
-                <textarea class="text_3"></textarea>
+                <div class="text_3 mb-3">
+                    <label for="exampleFormControlInput1" class="form-label contacto-label">Nombre</label>
+                    <input type="email" class="form-control" id="exampleFormControlInput1">
+                </div>
+                <div class="text_3 mb-3">
+                    <label for="exampleFormControlInput1" class="form-label contacto-label">Apellido</label>
+                    <input type="email" class="form-control" id="exampleFormControlInput1">
+                </div>
+                <div class="text_3 mb-3">
+                    <label for="exampleFormControlInput1" class="form-label contacto-label">Dirección de correo</label>
+                    <input type="email" class="form-control" id="exampleFormControlInput1">
+                </div>
             </div>
             <div id="contacto_div_right">
-                <p>Consúltanos</p>
-                <textarea id="bigger" class="text_3"></textarea>
+                <div class="text_3 mb-3">
+                    <label for="exampleFormControlTextarea1" class="form-label contacto-label">Consúltanos</label>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                </div>
                 <button>Enviar</button>
             </div>
         </form>

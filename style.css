@@ -19,10 +19,6 @@ a{
 a:hover {
     color: initial;
 }
-/*
-dl, ol, ul {
-    margin: 0;
-}*/
 
 .color_dark-brown_gradient{
     background-image: linear-gradient(to right, #A37C40 0%, #B49082 100%);
@@ -57,12 +53,6 @@ dl, ol, ul {
     color: #98473E;
 }
 
-/*
-.selected:hover {
-    color: #98473E;
-}*//*???*/
-
-
 .space_evenly{
     display: flex;
     flex-direction: row;
@@ -83,26 +73,11 @@ button{
 }
 
 /*--------------------CARDS--------------------*/
-/*.cardi{
-    border: #98473E 2px solid;
-    background-color: #B49082;
-    border-radius: 20px;
-    overflow: hidden;
-    margin: 20px;
-    height: 480px;
-    width: 233px;
-    color: black;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-}*/
 
 .btn:first-child:hover, :not(.btn-check)+.btn:hover {
     color: black;
     background-color: #98473E;
-}/*Anda a saber*/
+}
 
 .card_buttonn {
     width: 150px;
@@ -142,6 +117,37 @@ button{
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
+}
+
+/*--------------------FORMS--------------------*/
+.form-select{
+    background-color: #98473E;
+    color: #B49082;
+    border-color: #98473E;
+}
+
+.form-select:focus{
+    background-color: #98473E;
+    color: wheat;
+    border-color: #98473E;
+    box-shadow: 0 0 0 0.25rem #A37C40;
+}
+
+.form-label{
+    color:#98473E; 
+}
+
+.form-control{
+    background-color: #98473E;
+    color: wheat;
+    border-color: #98473E;
+}
+
+.form-control:focus{
+    background-color: #98473E;
+    color: wheat;
+    border-color: #98473E;
+    box-shadow: 0 0 0 0.25rem #A37C40;
 }
 
 /*-------------------HEADER--------------------*/
@@ -211,12 +217,6 @@ header button{
 #inicio{
     height: 100vh;
 }
-
-/*#inicio div{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-}*/
 
 .carousel-indicators [data-bs-target] {
     width: 10px;
@@ -369,18 +369,9 @@ header button{
     justify-content: center;
 }
 
-/*.navbar-propio {
-    padding: 0;
-}*/
-
 .color_gradient_dark_blue h2{
     color: #A37C40;
 }
-
-/*.carta_nav ul li{
-    display: inline-block;
-    padding: 10px;
-} */
 
 .carta_nav a{
 	display: inline-block;
@@ -460,8 +451,9 @@ header button{
 
 #reservas .color_brown{
     opacity: 0.85;
-    height: 50%;
-    width: 40%;
+    height: auto;
+    width: fit-content;
+    min-height: 250px;
     border: #A37C40 solid 10px;
     display: flex;
     flex-direction: column;
@@ -473,6 +465,10 @@ header button{
 #reservas .color_brown button{
     align-self: flex-end;
     margin: 0 5px 5px 0;
+}
+
+#reservas .mb-3{
+    margin: 0 10px 0 10px;
 }
 
 #reservas .color_brown nav ol{
@@ -547,6 +543,10 @@ header button{
     flex-direction: row;
     justify-content: center;
 }   
+
+.contacto-label{
+    color:#A37C40;
+}
 
 #contacto p{
     color: #A37C40;
@@ -716,20 +716,10 @@ footer iframe{
 @media screen and (max-width: 600px) {
     
     /*-------------------HEADER--------------------*/
-    /*header{
-        flex-flow: column wrap;
-        align-items: center;
-    }*/
 
     header .login{
         display: none;
     }
-
-    /*header nav ul{
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-    }/*
 
     /*---------------NUESTRASS DELICIAS--------------*/
 
@@ -757,41 +747,6 @@ footer iframe{
 
 @media screen and (max-width: 480px) {
 
-    /*---------------------CARDS---------------------*/
-    /*.card{
-        border-radius: 0px;
-        height: fit-content;
-        width: 200px;
-        text-align: left;
-        flex-direction: row;
-        font-size: 10px;
-    }
-
-    .card_product_img{
-        height: 60px;
-        width: auto;
-    }
-
-    .card div{
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        align-self: flex-start;
-        width: 120px;
-    }
-
-    .card h3{
-        align-self: flex-start;
-    }
-
-    .card button{
-        border: none;
-    }
-
-    .card button img{
-        display: none;
-    }*/
-
     /*--------------------INICIO--------------------*/
     #inicio div a{
         display: flex;
@@ -809,57 +764,6 @@ footer iframe{
     }
         
     /*---------------NUESTRASS DELICIAS--------------*/
-/*
-    #nuestras_delicias_container{
-        justify-content: space-between;
-    }
-
-    #nuestras_delicias_container a img{
-        width: 150px;
-        height: auto;   
-    }
-
-    #nuestras_delicias_container a{
-        width: 500px;
-        height: auto;
-        justify-content: flex-start;
-    }
-
-    #nuestras_delicias_container a div{
-        width: 300px;
-        font-size: 20px;
-    }
-
-    #nuestras_delicias_container a div h3{
-        font-size: 24px;
-    }
-
-    #nuestras_delicias_img_2{
-        display: none;  /*Irán como carrusel*/
-   /* }*/
-
-    /*---------------------CARTA---------------------*/
-
-    /*#products_container_1, #products_container_2{
-        margin-top: 10px;
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(3, 1fr);
-        row-gap: 0px;
-    }
-
-    #products_container_3{
-        margin-top: 10px;
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(4, 1fr);
-        row-gap: 0px;
-    }
-
-    #products_container_4{
-        padding: 10px 0 30px 0;
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(5, 1fr);
-        row-gap: 0px;
-    }*/
 
     #cafes{
         padding-top: 137px;
@@ -969,21 +873,6 @@ footer iframe{
         height: auto;
     }
 
-    /*#products_container_1, #products_container_2{
-        grid-template-columns: repeat(1, 1fr);
-        grid-template-rows: repeat(5, 1fr);
-    }
-
-    #products_container_3{
-        grid-template-columns: repeat(1, 1fr);
-        grid-template-rows: repeat(7, 1fr);
-    }
-
-    #products_container_4{
-        grid-template-columns: repeat(1, 1fr);
-        grid-template-rows: repeat(9, 1fr);
-    }*/
-
     #cafes{
         padding-top: 259px;
     }
@@ -1032,5 +921,4 @@ footer iframe{
         height: 140px;
     }
     
-
 }
