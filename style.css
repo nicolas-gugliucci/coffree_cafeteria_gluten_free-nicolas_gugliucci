@@ -174,12 +174,17 @@ header{
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
+    align-self: flex-start;
     align-items: center;
 }
 
 #header_nav_button{
     display: flex;
     align-items: center;
+}
+
+.logos{
+    display: none;
 }
 
 .bg-light-propio {
@@ -209,7 +214,6 @@ header div a img{
 }
 
 header nav ul li{
-    display: inline-block;
     padding: 10px;
 }
 
@@ -218,7 +222,7 @@ header button{
     width: 50px;
     border-radius: 50%;
     border: none;
-    margin: 0 10px 0 20px;
+    margin: 0 10px 0 0;
 }
 
 /*--------------------INICIO--------------------*/
@@ -234,14 +238,6 @@ header button{
     margin-right: 20px;
     background-color: #203A43;
 }
-/*
-.carousel-control-prev-icon{
-    background: none;
-}
-
-.carousel-control-next-icon {
-    background: none;
-}*/
 
 #inicio a{
     text-align: center;
@@ -428,19 +424,19 @@ header button{
 }
 
 #cafes{
-    padding-top: 125px;
+    padding-top: 137px;
 }
 
 #jugos{
-    padding-top: 125px;
+    padding-top: 137px;
 }
 
 #salados{
-    padding-top: 125px;
+    padding-top: 137px;
 }
 
 #dulces{
-    padding-top: 125px;
+    padding-top: 137px;
 }
 /*-------------------RESERVAS-------------------*/
 #reservas_body{
@@ -676,13 +672,22 @@ footer iframe{
      #nuestras_delicias_img_4{
         display: none;  /*Irá como carrusel*/
     }
-
-    .carousel-item-2{
-        display: none;
-    }
 }
 
 @media screen and (max-width: 768px) {
+
+    /*-------------------HEADER--------------------*/
+    .logos{
+        display: block;
+    }
+
+    .navbar-nav-propio li{
+        order: 2;
+    }
+
+    .navbar-nav-propio .userr{
+        order: 1;
+    }
 
     /*---------------NUESTRASS DELICIAS--------------*/
 
@@ -744,8 +749,6 @@ footer iframe{
         display: none;
     }
 
-    
-
     /*---------------------CARTA---------------------*/
    
     #carta_nav{
@@ -777,12 +780,34 @@ footer iframe{
 
 @media screen and (max-width: 480px) {
 
-    /*--------------------INICIO--------------------*/
-   /* #inicio div a{
-        display: flex;
-        justify-content: stretch;
-    }*/
+     /*-------------------HEADER--------------------*/
+     #header_logo{
+        flex-flow: column nowrap;
+    }
 
+    #header_logo h1{
+        font-size: 14px;
+    }
+
+    #header_logo img{
+        width: 25px;
+        height: auto;
+    }
+
+    #header_nav_button{
+        align-self: flex-start;
+    }
+
+    /*header nav ul{
+        flex-wrap: nowrap;
+        flex-direction: column;     /*Van a estar dentro de un desplegable por lo que no es necesario cambiar el padding de las secciones*/
+   /* }*/
+
+    header nav ul li{
+        font-size: 12px;
+    }
+
+    /*--------------------INICIO--------------------*/
     #inicio{
         height: auto;
     }
@@ -865,33 +890,6 @@ footer iframe{
 
     .marco{
         padding-top: 213px;
-    }
-
-    /*-------------------HEADER--------------------*/
-    #header_logo{
-        flex-flow: column nowrap;
-    }
-
-    #header_logo h1{
-        font-size: 14px;
-    }
-
-    #header_logo img{
-        width: 25px;
-        height: auto;
-    }
-
-    #header_nav_button{
-        align-self: flex-start;
-    }
-
-    header nav ul{
-        flex-wrap: nowrap;
-        flex-direction: column;     /*Van a estar dentro de un desplegable por lo que no es necesario cambiar el padding de las secciones*/
-    }
-
-    header nav ul li{
-        font-size: 12px;
     }
 
     /*--------------------INICIO--------------------*/
