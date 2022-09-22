@@ -1,0 +1,121 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+}
+
+.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+    font-weight: initial;
+    line-height: normal;
+}
+
+a{
+    color: black;
+    text-decoration: none;
+    &:hover{
+        color: initial;
+    }
+}
+
+.color_dark-brown_gradient{
+    background-image: linear-gradient(to right, $c-principal 0%, $c-terciario 100%);
+}
+
+.color_dark-brown{
+    background-color: $c-principal;      /*#C76831*/
+}
+
+.color_brown{
+    background-color: $c-terciario;      /*#7A401F*/
+}
+
+.color_gradient_dark_blue{
+    background-image: $c-bg-gradient;
+}
+
+.text_1{
+    font-family: 'Aboreto', cursive;
+}
+
+.text_2{
+    font-family: 'Comfortaa', cursive;
+}
+
+.text_3{
+    font-family: 'Raleway', sans-serif;
+}
+
+.selected{
+    text-decoration: underline;
+    color: $c-secundario;
+}
+
+.space_evenly{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+#center_center{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+/*-------------------BUTTONS-------------------*/
+button{
+    background-color: $c-terciario;
+    border-color: $c-secundario;
+}
+
+/*--------------------CARDS--------------------*/
+
+.btn:first-child:hover, :not(.btn-check)+.btn:hover {
+    color: black;
+    background-color: $c-secundario;
+}
+
+.card_buttonn {
+    width: 150px;
+	padding: 12px 24px;
+    background-color: $c-secundario;
+    border: $c-secundario;
+    color: black;
+    border-radius: 7px;
+    transition: transform 250ms cubic-bezier(.2,.8,.4,1);
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: center;
+    p{
+        font-size: nth($list: $font-size, $n: 6) !important;
+    }
+    &:hover{
+        transform: scale(1.10);
+    }
+    &:active{
+        transform: scale(0.9);
+    }
+  }
+
+
+.card{
+    background-color: $c-terciario;
+    h5{
+        font-family: 'Comfortaa', cursive;
+        font-size: nth($list: $font-size, $n: 8);
+    }
+    p{
+        font-family: 'Raleway', sans-serif;
+        font-size: nth($list: $font-size, $n: 5);
+    }
+}
+
+.card-body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}

@@ -1,0 +1,28 @@
+footer{
+    color: black;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    div{
+        margin-left: 10px;
+        a{
+            display: flex;
+            flex-direction: row;
+            align-items: flex-start;
+            i{
+                margin-right: 10px;
+            }
+        }
+    }
+    iframe{
+        padding: 5px;
+        width: 160px;
+        height: 160px;
+    }
+}
+
+.space_around{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}

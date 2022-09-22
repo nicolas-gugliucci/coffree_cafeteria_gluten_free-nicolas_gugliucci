@@ -1,0 +1,24 @@
+{
+  "name": "root",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nicolas-gugliucci/coffree_cafeteria_gluten_free-nicolas_gugliucci.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nicolas-gugliucci/coffree_cafeteria_gluten_free-nicolas_gugliucci/issues"
+  },
+  "homepage": "https://github.com/nicolas-gugliucci/coffree_cafeteria_gluten_free-nicolas_gugliucci#readme",
+  "devDependencies": {
+    "node-sass": "^7.0.3",
+    "nodemon": "^2.0.20"
+  }
+}

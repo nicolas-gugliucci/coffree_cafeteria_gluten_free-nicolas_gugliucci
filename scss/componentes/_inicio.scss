@@ -1,0 +1,52 @@
+#inicio{
+    height: 100vh;
+    a{
+        text-align: center;
+        margin: 20px;
+        border-radius: 5%;
+        width: 277px;
+        height: fit-content;
+        overflow: hidden;
+        padding: 12px 24px;
+        border-radius: 7px;
+        background-color:  $c-principal;
+        color: $c-secundario;
+        position: relative;
+        display: inline-block;
+        cursor: pointer;
+        &:before{
+            content: "";
+            display: block;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: $c-secundario;
+            transform: scaleX(0);
+            transform-origin: 100% 100%;
+            transition: transform 0.6s cubic-bezier(0.53, 0.21, 0, 1);
+            transform: 0.6s cu;
+        }
+        &:hover::before{
+            transform-origin: 0 0;
+            transform: scaleX(1);
+        }
+        &:hover span{
+            color: $c-principal;
+        }
+        span{
+            position: relative;
+            transition: color 0.6s cubic-bezier(0.53, 0.21, 0, 1);
+        }
+    }
+}
+
+.carousel-indicators [data-bs-target] {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    margin-left: 20px;
+    margin-right: 20px;
+    background-color: #203A43;
+}

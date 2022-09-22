@@ -1,0 +1,21 @@
+#nosotros .background{
+    background-image: url("../images/lugar3.png");
+    height: 750px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#nosotros_all{
+    opacity: 0.85;
+    width: 60%;
+    height: auto;
+    border: $c-principal solid 10px;
+    p{
+        text-align: justify;
+    }
+}
