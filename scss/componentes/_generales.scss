@@ -59,10 +59,9 @@ a{
 }
 
 #center_center{
-    display: flex;
+    @extend %flexac;
     flex-direction: row;
     justify-content: center;
-    align-items: center;
 }
 
 /*-------------------BUTTONS-------------------*/
@@ -74,19 +73,16 @@ button{
 /*--------------------CARDS--------------------*/
 
 .btn:first-child:hover, :not(.btn-check)+.btn:hover {
-    color: black;
-    background-color: $c-secundario;
+    @include estilo ($c-secundario,0,0,0,0);
 }
 
 .card_buttonn {
     width: 150px;
 	padding: 12px 24px;
-    background-color: $c-secundario;
+    @include estilo ($c-secundario,0,0,10px,0);
     border: $c-secundario;
-    color: black;
     border-radius: 7px;
     transition: transform 250ms cubic-bezier(.2,.8,.4,1);
-    margin-bottom: 10px;
     display: flex;
     justify-content: center;
     p{
@@ -102,20 +98,20 @@ button{
 
 
 .card{
-    background-color: $c-terciario;
+    
+    background-color: map-get($map: $card, $key:background-color );
     h5{
         font-family: 'Comfortaa', cursive;
-        font-size: nth($list: $font-size, $n: 8);
+        font-size: map-get($map: $card, $key:font-size-h5);
     }
     p{
         font-family: 'Raleway', sans-serif;
-        font-size: nth($list: $font-size, $n: 5);
+        font-size: map-get($map: $card, $key:font-size-p );
     }
 }
 
 .card-body{
-    display: flex;
+    @extend %flexac;
     flex-direction: column;
-    align-items: center;
     justify-content: space-between;
 }

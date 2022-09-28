@@ -32,16 +32,14 @@ header{
 }
 
 #header_logo{
-    display: flex;
+    @extend %flexac;
     flex-flow: row wrap;
     justify-content: center;
     align-self: flex-start;
-    align-items: center;
 }
 
 #header_nav_button{
-    display: flex;
-    align-items: center;
+    @extend %flexac;
 }
 
 .logos{

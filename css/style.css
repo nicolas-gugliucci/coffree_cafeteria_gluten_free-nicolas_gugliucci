@@ -1,4 +1,10 @@
+@charset "UTF-8";
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css");
+#nuestras_delicias_container, #nosotros .background, #header_nav_button, #header_logo, .card-body, #center_center {
+  display: flex;
+  align-items: center;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -60,10 +66,8 @@ a:hover {
 }
 
 #center_center {
-  display: flex;
   flex-direction: row;
   justify-content: center;
-  align-items: center;
 }
 
 /*-------------------BUTTONS-------------------*/
@@ -74,19 +78,20 @@ button {
 
 /*--------------------CARDS--------------------*/
 .btn:first-child:hover, :not(.btn-check) + .btn:hover {
-  color: black;
   background-color: #98473E;
+  color: black;
+  margin: 0 0 0 0;
 }
 
 .card_buttonn {
   width: 150px;
   padding: 12px 24px;
   background-color: #98473E;
-  border: #98473E;
   color: black;
+  margin: 0 0 10px 0;
+  border: #98473E;
   border-radius: 7px;
   transition: transform 250ms cubic-bezier(0.2, 0.8, 0.4, 1);
-  margin-bottom: 10px;
   display: flex;
   justify-content: center;
 }
@@ -113,9 +118,7 @@ button {
 }
 
 .card-body {
-  display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: space-between;
 }
 
@@ -147,16 +150,9 @@ header nav ul li {
 }
 
 #header_logo {
-  display: flex;
   flex-flow: row wrap;
   justify-content: center;
   align-self: flex-start;
-  align-items: center;
-}
-
-#header_nav_button {
-  display: flex;
-  align-items: center;
 }
 
 .logos {
@@ -241,9 +237,7 @@ header nav ul li {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  display: flex;
   justify-content: center;
-  align-items: center;
 }
 
 #nosotros_all {
@@ -258,9 +252,7 @@ header nav ul li {
 
 #nuestras_delicias_container {
   width: 100%;
-  display: flex;
   justify-content: space-around;
-  align-items: center;
 }
 
 #nuestras_delicias h2 {
@@ -301,6 +293,7 @@ header nav ul li {
     background-position: -200% 0;
   }
 }
+/*--------------------FOOTER--------------------*/
 footer {
   color: black;
   display: flex;
@@ -328,6 +321,562 @@ footer iframe {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
+}
+
+/*--------------------FORMS--------------------*/
+.form-select {
+  background-color: #98473E;
+  color: #B49082;
+  border-color: #98473E;
+}
+
+.form-select:focus {
+  background-color: #98473E;
+  color: wheat;
+  border-color: #98473E;
+  box-shadow: 0 0 0 0.25rem #A37C40;
+}
+
+.form-label {
+  color: #98473E;
+}
+
+.form-control {
+  background-color: #98473E;
+  color: wheat;
+  border-color: #98473E;
+}
+
+.form-control:focus {
+  background-color: #98473E;
+  color: wheat;
+  border-color: #98473E;
+  box-shadow: 0 0 0 0.25rem #A37C40;
+}
+
+/*---------------------CARTA---------------------*/
+.carta_nav {
+  width: 100%;
+  position: sticky;
+  top: 78px;
+  z-index: 1;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  border-bottom: black solid 2px;
+}
+
+.carta_nav .container-fluid {
+  justify-content: center;
+}
+
+.color_gradient_dark_blue h2 {
+  color: #A37C40;
+}
+
+.carta_nav a {
+  display: inline-block;
+  position: relative;
+  cursor: pointer;
+}
+
+.carta_nav a::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  top: 110%;
+  left: 0;
+  background-color: #98473E;
+  transform-origin: bottom right;
+  transition: transform 0.4s cubic-bezier(0.86, 0, 0.07, 1);
+}
+
+.carta_nav a:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+#products_container_1, #products_container_2, #products_container_3 {
+  margin-top: 40px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  row-gap: 30px;
+  justify-items: center;
+}
+
+#products_container_4 {
+  padding: 40px 0 30px 0;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  row-gap: 30px;
+  justify-items: center;
+}
+
+#cafes {
+  padding-top: 137px;
+}
+
+#jugos {
+  padding-top: 137px;
+}
+
+#salados {
+  padding-top: 137px;
+}
+
+#dulces {
+  padding-top: 137px;
+}
+
+/*-------------------RESERVAS-------------------*/
+#reservas_body {
+  height: 100vh;
+  background-color: #A37C40;
+}
+
+#reservas_footer {
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+}
+
+#reservas .background {
+  background-image: url("../images/lugar2.png");
+  background-size: cover;
+  width: 100%;
+  height: 520px;
+}
+
+#reservas .color_brown {
+  opacity: 0.85;
+  height: auto;
+  width: fit-content;
+  width: -moz-fit-content;
+  min-height: 250px;
+  border: #A37C40 solid 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-content: space-between;
+  align-items: center;
+}
+
+#reservas .color_brown button {
+  align-self: flex-end;
+}
+
+#reservas .mb-3 {
+  margin: 0 10px 0 10px;
+}
+
+#reservas .color_brown nav ol {
+  text-align: center;
+}
+
+#reservas .color_brown form ul {
+  text-align: center;
+}
+
+#reservas .color_brown .align_right {
+  align-self: flex-start;
+  margin-left: 10px;
+}
+
+#reservas .color_brown nav ol li {
+  display: inline-block;
+  padding: 10px;
+}
+
+#reservas .color_brown form ul li {
+  display: flex;
+  padding: 10px;
+}
+
+.options {
+  display: none;
+}
+
+#reservas button {
+  border: black solid 1px;
+  padding: 3px 5px;
+  background-color: #98473E;
+  color: black;
+  margin: 0 7px 7px 0;
+  border-radius: 5px;
+  transition: transform 250ms cubic-bezier(0.2, 0.8, 0.4, 1);
+}
+
+#reservas button:hover {
+  transform: scale(1.1);
+}
+
+#reservas button:active {
+  transform: scale(0.9);
+}
+
+/*-------------------CONTACTO-------------------*/
+#contacto_body {
+  height: 100vh;
+  background-color: #B49082;
+}
+
+#contacto_footer {
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+}
+
+.contacto_img_container {
+  height: 300px;
+  overflow: hidden;
+}
+
+#contacto img {
+  width: 100%;
+}
+
+#contacto form {
+  padding: 30px 0 30px 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.contacto-label {
+  color: #A37C40;
+}
+
+#contacto p {
+  color: #A37C40;
+}
+
+#contacto form div {
+  display: flex;
+  flex-direction: column;
+}
+
+#contacto_div_left {
+  margin-right: 10%;
+}
+
+#contacto_div_right {
+  margin-left: 10%;
+}
+
+#contacto form div button {
+  width: fit-content;
+  width: -moz-fit-content;
+  align-self: flex-end;
+}
+
+#bigger {
+  width: 470px;
+  height: 140px;
+}
+
+#contacto button {
+  border: black solid 1px;
+  padding: 3px 5px;
+  background-color: #A37C40;
+  color: black;
+  margin: 2px 0 0 0;
+  border-radius: 5px;
+  transition: transform 250ms cubic-bezier(0.2, 0.8, 0.4, 1);
+}
+
+#contacto button:hover {
+  transform: scale(1.1);
+}
+
+#contacto button:active {
+  transform: scale(0.9);
+}
+
+/*--------------------FOOTER--------------------*/
+footer {
+  color: black;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.space_around {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+footer div {
+  margin-left: 10px;
+}
+
+footer div a {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+}
+
+footer div a i {
+  margin-right: 10px;
+}
+
+footer iframe {
+  padding: 5px;
+  width: 160px;
+  height: 160px;
+}
+
+@media screen and (max-width: 1200px) {
+  #products_container_1, #products_container_2 {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+  }
+  #products_container_3 {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+  }
+  #products_container_4 {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+  }
+}
+@media screen and (max-width: 992px) {
+  #products_container_1, #products_container_2 {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+  }
+  #products_container_3 {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+  }
+  #products_container_4 {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+  }
+  /*---------------NUESTRASS DELICIAS--------------*/
+  #nuestras_delicias_img_4 {
+    display: none; /*Irá como carrusel*/
+  }
+}
+@media screen and (max-width: 768px) {
+  /*-------------------HEADER--------------------*/
+  .logos {
+    display: block;
+  }
+  .navbar-nav-propio li {
+    order: 2;
+  }
+  .navbar-nav-propio .userr {
+    order: 1;
+  }
+  /*---------------NUESTRASS DELICIAS--------------*/
+  #nuestras_delicias_img_3 {
+    display: none; /*Irá como carrusel*/
+  }
+  .carta_nav {
+    top: 68px;
+  }
+  /*-------------------RESERVAS-------------------*/
+  #reservas .color_brown {
+    width: fit-content;
+    width: -moz-fit-content;
+  }
+  /*-------------------CONTACTO-------------------*/
+  #contacto img {
+    height: 300px;
+    width: auto;
+  }
+  #contacto_div_left {
+    margin-right: 5%;
+  }
+  #contacto_div_right {
+    margin-left: 5%;
+  }
+  #bigger {
+    width: 300px;
+  }
+}
+@media screen and (max-width: 620px) {
+  #products_container_1, #products_container_2 {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(5, 1fr);
+  }
+  #products_container_3 {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(7, 1fr);
+  }
+  #products_container_4 {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(9, 1fr);
+  }
+}
+@media screen and (max-width: 600px) {
+  /*-------------------HEADER--------------------*/
+  header .login {
+    display: none;
+  }
+  /*---------------------CARTA---------------------*/
+  #carta_nav {
+    top: 92px;
+  }
+  /*#products_container_1, #products_container_2, #products_container_3, #products_container_4{
+      justify-items: start;
+      padding-left: 20px;
+  }*/
+  /*-------------------RESERVAS-------------------*/
+  #reservas .color_brown, #reservas button a {
+    font-size: 12px;
+  }
+  /*-------------------FOOTER -------------------*/
+  .space_around {
+    display: none;
+  }
+}
+@media screen and (max-width: 576px) {
+  #nuestras_delicias_img_2 {
+    display: none; /*Irá como carrusel*/
+  }
+}
+@media screen and (max-width: 480px) {
+  /*-------------------HEADER--------------------*/
+  #header_logo {
+    flex-flow: column nowrap;
+  }
+  #header_logo h1 {
+    font-size: 14px;
+  }
+  #header_logo img {
+    width: 25px;
+    height: auto;
+  }
+  #header_nav_button {
+    align-self: flex-start;
+  }
+  /*header nav ul{
+      flex-wrap: nowrap;
+      flex-direction: column;     /*Van a estar dentro de un desplegable por lo que no es necesario cambiar el padding de las secciones*/
+  /* }*/
+  header nav ul li {
+    font-size: 12px;
+  }
+  /*--------------------INICIO--------------------*/
+  #inicio {
+    height: auto;
+  }
+  #inicio a {
+    width: 250px;
+  }
+  #inicio div a img {
+    height: 24px;
+    width: 24px;
+  }
+  /*-------------------NOSOTROS-------------------*/
+  #nosotros .background {
+    height: 500px;
+  }
+  #nosotros_all {
+    font-size: 12px;
+  }
+  /*---------------NUESTRASS DELICIAS--------------*/
+  #cafes {
+    padding-top: 137px;
+  }
+  #cafes h2 {
+    font-size: 20px;
+  }
+  #jugos {
+    padding-top: 137px;
+  }
+  #jugos h2 {
+    font-size: 20px;
+  }
+  #salados {
+    padding-top: 137px;
+  }
+  #salados h2 {
+    font-size: 20px;
+  }
+  #dulces {
+    padding-top: 137px;
+  }
+  #dulces h2 {
+    font-size: 20px;
+  }
+  /*-------------------CONTACTO-------------------*/
+  #bigger {
+    width: 200px;
+  }
+  #contacto_footer {
+    position: initial;
+  }
+  #reservas_footer {
+    position: initial;
+  }
+  /*--------------------FOOTER--------------------*/
+  footer iframe {
+    width: 120px;
+    height: 120px;
+  }
+}
+@media screen and (max-width: 320px) {
+  .marco {
+    padding-top: 213px;
+  }
+  /*--------------------INICIO--------------------*/
+  #inicio a {
+    width: 200px;
+  }
+  /*---------------------CARTA---------------------*/
+  #carta_nav {
+    top: 213px;
+    font-size: 12px;
+    height: 36px;
+  }
+  #carta_nav img {
+    width: 12px;
+    height: auto;
+  }
+  #cafes {
+    padding-top: 259px;
+  }
+  #jugos {
+    padding-top: 259px;
+  }
+  #salados {
+    padding-top: 259px;
+  }
+  #dulces {
+    padding-top: 259px;
+  }
+  /*-------------------RESERVAS-------------------*/
+  #reservas .color_brown {
+    width: 100%;
+    border: none;
+  }
+  #reservas form ul {
+    flex-direction: column;
+  }
+  /*-------------------CONTACTO-------------------*/
+  #contacto form {
+    flex-direction: column;
+    justify-content: center;
+  }
+  #contacto_div_left {
+    align-self: center;
+    margin-right: 0;
+    width: 60%;
+  }
+  #contacto_div_right {
+    margin: 30px 5px 30px 5px;
+  }
+  #bigger {
+    width: 100%;
+    height: 140px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

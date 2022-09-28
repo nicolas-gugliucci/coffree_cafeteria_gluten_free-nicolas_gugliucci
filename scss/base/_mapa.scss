@@ -1,0 +1,6 @@
+$card:(
+    background-color: $c-terciario,
+    font-size-h5: nth($list: $font-size, $n: 8),
+    border-radius-h5: 7px,
+    font-size-p: nth($list: $font-size, $n: 5),
+);

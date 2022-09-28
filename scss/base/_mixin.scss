@@ -1,0 +1,5 @@
+@mixin estilo ($bc-color, $mg-arriba, $mg-derecha, $mg-abajo, $mg-izquierda){
+    background-color: $bc-color;
+    color: black;
+    margin: $mg-arriba $mg-derecha $mg-abajo $mg-izquierda;
+};

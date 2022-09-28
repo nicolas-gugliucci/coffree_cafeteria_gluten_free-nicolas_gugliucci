@@ -5,9 +5,8 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    display: flex;
+    @extend %flexac;
     justify-content: center;
-    align-items: center;
 }
 
 #nosotros_all{

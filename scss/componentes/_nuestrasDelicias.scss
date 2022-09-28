@@ -1,8 +1,7 @@
 #nuestras_delicias_container{
     width: 100%;
-    display: flex;
+    @extend %flexac;
     justify-content: space-around;
-    align-items: center;
 }
 
 #nuestras_delicias h2{
