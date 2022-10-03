@@ -7,14 +7,23 @@
     background-size: cover;
     @extend %flexac;
     justify-content: center;
-}
-
-#nosotros_all{
-    opacity: 0.85;
-    width: 60%;
-    height: auto;
-    border: $c-principal solid 10px;
-    p{
-        text-align: justify;
+    #nosotros_all{
+        opacity: 0.85;
+        width: 60%;
+        height: auto;
+        border: $c-principal solid 10px;
+        p{
+            text-align: justify;
+            margin-right: 10px;
+            margin-left: 5px;
+            @media screen and (max-width: 480px) {
+                text-align: left;
+            }
+            @media screen and (max-width: 480px) {
+                margin-bottom: 0;
+            }
+        }
     }
 }
+
+

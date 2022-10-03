@@ -31,7 +31,7 @@
                         <span class="navbar-toggler-icon"></span>
                     </button>
                     <div class="collapse navbar-collapse" id="navbarNav">
-                        <ul class="navbar-nav text_2">
+                        <ul class="navbar-nav navbar-nav-propio text_2">
                             <li class="nav-item">
                                 <a class="nav-link nav-link-propio" href="./index.html">Inicio</a>
                             </li>
@@ -47,16 +47,24 @@
                             <li class="nav-item">
                             <a class="nav-link nav-link-propio" href="./contacto.html">Contacto</a>
                             </li>
-                            <li class="nav-item logos">
-                                <a target="_blank" href="https://www.google.es/maps/place/Rbla.+Rep%C3%BAblica+del+Per%C3%BA+1413,+11300+Montevideo,+Departamento+de+Montevideo/@-34.9096346,-56.1413531,17z/data=!3m1!4b1!4m5!3m4!1s0x959f816b2f6baab7:0x4b44c632b43229a4!8m2!3d-34.9096346!4d-56.139783">
-                                    <i class="bi bi-geo-alt-fill"></i>
-                                </a>
-                                <a class="text_3" target="_blank" href="tel:+59898765432">
-                                    <i class="bi bi-telephone-fill"></i>
-                                </a>
-                                <a target="_blank" href="https://www.instagram.com/nico_gugliucci/">             <!--agregar instagram link-->
-                                    <i class="bi bi-instagram"></i>
-                                </a>
+                            <li class="nav-item">
+                                <ol class="logos">
+                                    <li>
+                                        <a target="_blank" href="https://www.google.es/maps/place/Rbla.+Rep%C3%BAblica+del+Per%C3%BA+1413,+11300+Montevideo,+Departamento+de+Montevideo/@-34.9096346,-56.1413531,17z/data=!3m1!4b1!4m5!3m4!1s0x959f816b2f6baab7:0x4b44c632b43229a4!8m2!3d-34.9096346!4d-56.139783">
+                                            <i class="bi bi-geo-alt-fill"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="text_3" target="_blank" href="tel:+59898765432">
+                                            <i class="bi bi-telephone-fill"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a target="_blank" href="https://www.instagram.com/nico_gugliucci/">             <!--agregar instagram link-->
+                                            <i class="bi bi-instagram"></i>
+                                        </a>
+                                    </li>
+                                </ol>
                             </li>
                             <li class="nav-item userr">
                                 <button class="login">
@@ -76,27 +84,40 @@
         <div>
         <ul class="navbar-nav text_2">
             <li class="nav-item">
-            <a class="nav-link" href="#cafes" aria-current="true"><img src="./images/icon-coffee.png" alt="Icono de café"> Cafés</a>
+            <a class="nav-link" href="#cafes" aria-current="true">
+                <img src="./images/icon-coffee.png" alt="Icono de café"> 
+                Cafés
+            </a>
             </li>
             <li class="nav-item">
-            <a class="nav-link" href="#jugos" aria-current="true"><img src="./images/icon-juice.png" alt="Icono de jugo"> Jugos</a>
+            <a class="nav-link" href="#jugos" aria-current="true">
+                <img src="./images/icon-juice.png" alt="Icono de jugo">
+                Jugos
+            </a>
             </li>
             <li class="nav-item">
-            <a class="nav-link" href="#salados" aria-current="true"><img src="./images/icon-sandwich.png" alt="Icono de sandwich"> Salados</a>
+            <a class="nav-link" href="#salados" aria-current="true">
+                <img src="./images/icon-sandwich.png" alt="Icono de sandwich"> 
+                Salados
+            </a>
             </li>
             <li class="nav-item">
-            <a class="nav-link" href="#dulces" aria-current="true"><img src="./images/icon-croissant.png" alt="Icono de croissant"> Dulces</a>
+            <a class="nav-link" href="#dulces" aria-current="true">
+                <img src="./images/icon-croissant.png" alt="Icono de croissant"> 
+                Dulces
+            </a>
             </li>
         </ul>
         </div>
     </div>
 </nav>    
 
-<!-------------------------------------------------CAFÉS------------------------------------------------->
+<div class="carta_container">
+    <!-------------------------------------------------CAFÉS------------------------------------------------->
     <section id="cafes" class="color_gradient_dark_blue">
         <h2 class="text_2">Cafés</h2>
         <div id="products_container_1">
-            <div class="card text-center" style="width: 18rem;">
+            <div class="card carta_card text-center" style="width: 28rem;">
                 <img src="./images/cafes_capuchino.jpg" class="card-img-top" alt="Capuchino espumoso con ralladura de chocolate y frutilla">
                 <div class="card-body">
                     <h5 class="card-title">Capuchino</h5>
@@ -105,7 +126,7 @@
                     </button>
                 </div>
             </div>
-            <div class="card text-center" style="width: 18rem;">
+            <div class="card carta_card text-center" style="width: 28rem;">
                 <img src="./images/cafes_espresso.jpg" class="card-img-top" alt="Espresso de café">
                 <div class="card-body">
                     <h5 class="card-title">Espresso</h5>
@@ -114,7 +135,7 @@
                     </button>
                 </div>
             </div>
-            <div class="card text-center" style="width: 18rem;">
+            <div class="card carta_card text-center" style="width: 28rem;">
                 <img src="./images/cafes_coconutvanillaicedcoffee.jpg" class="card-img-top" alt="Café helado con leche de coco y crema de café por arriba, perfumado con unas gotas de vainilla">
                 <div class="card-body">
                     <h5 class="card-title">Coconut vanilla iced coffee</h5>
@@ -123,7 +144,7 @@
                     </button>
                 </div>
             </div>
-            <div class="card text-center" style="width: 18rem;">
+            <div class="card carta_card text-center" style="width: 28rem;">
                 <img src="./images/cafes_icedcoffee.jpg" class="card-img-top" alt="Café helado clásico">
                 <div class="card-body">
                     <h5 class="card-title">Iced coffee</h5>
@@ -132,7 +153,7 @@
                     </button>
                 </div>
             </div>
-            <div class="card text-center" style="width: 18rem;">
+            <div class="card carta_card text-center" style="width: 28rem;">
                 <img src="./images/chocolate.jpg" class="card-img-top" alt="Chocolate caliente, con ralladura de chocolate por arriba">
                 <div class="card-body">
                     <h5 class="card-title">Hot chocolate</h5>
@@ -144,11 +165,11 @@
         </div>
     </section>
 
-<!-------------------------------------------------JUGOS------------------------------------------------>
+    <!-------------------------------------------------JUGOS------------------------------------------------>
     <section id="jugos" class="color_gradient_dark_blue">
         <h2 class="text_2">Jugos</h2>
         <div id="products_container_2">
-            <div class="card text-center" style="width: 18rem;">
+            <div class="card carta_card text-center" style="width: 28rem;">
                 <img src="./images/juice_cucumber.jpg" class="card-img-top" alt="Jugo de pepino refrescante">
                 <div class="card-body">
                     <h5 class="card-title">Cucumber juice</h5>
@@ -157,7 +178,7 @@
                     </button>
                 </div>
             </div>
-            <div class="card text-center" style="width: 18rem;">
+            <div class="card carta_card text-center" style="width: 28rem;">
                 <img src="./images/juice_fruit.jpg" class="card-img-top" alt="Jugo de pomelo y limón, aromatizado con unas hojas de albahaca">
                 <div class="card-body">
                     <h5 class="card-title">Pomelo-lime juice</h5>
@@ -166,7 +187,7 @@
                     </button>
                 </div>
             </div>
-            <div class="card text-center" style="width: 18rem;">
+            <div class="card carta_card text-center" style="width: 28rem;">
                 <img src="./images/juice_greentea.jpg" class="card-img-top" alt="Jugo de moras con té verde, una sensación renovadora">
                 <div class="card-body">
                     <h5 class="card-title">Black berry & green tea juice</h5>
@@ -175,7 +196,7 @@
                     </button>
                 </div>
             </div>
-            <div class="card text-center" style="width: 18rem;">
+            <div class="card carta_card text-center" style="width: 28rem;">
                 <img src="./images/juice_pinklemonade.jpg" class="card-img-top" alt="Limonada de frutos rojos">
                 <div class="card-body">
                     <h5 class="card-title">Pink lemonade</h5>
@@ -184,7 +205,7 @@
                     </button>
                 </div>
             </div>
-            <div class="card text-center" style="width: 18rem;">
+            <div class="card carta_card text-center" style="width: 28rem;">
                 <img src="./images/juice_tropicalpineapplegreen.jpg" class="card-img-top" alt="Jugo verde tropical, ideal para purificar el cuerpo">
                 <div class="card-body">
                     <h5 class="card-title">Tropical pineapple green juice</h5>
@@ -196,11 +217,11 @@
         </div>
     </section>
 
-<!-----------------------------------------------SALADOS----------------------------------------------->
+    <!-----------------------------------------------SALADOS----------------------------------------------->
     <section id="salados" class="color_gradient_dark_blue">
         <h2 class="text_2">Salados</h2>
         <div id="products_container_3">
-            <div class="card text-center" style="width: 18rem;">
+            <div class="card carta_card text-center" style="width: 28rem;">
                 <img src="./images/salados_avocado_hummus_toast.jpg" class="card-img-top" alt="Tostada de pan casero, untada con palta y hummus de garbanzos, agregandole zanahoria en tiras, verdes y semillas de girasol">
                 <div class="card-body">
                     <h5 class="card-title">Avocado toast</h5>
@@ -210,16 +231,16 @@
                     </button>
                 </div>
             </div>
-                <div class="card text-center" style="width: 18rem;">
-                    <img src="./images/salado_painaufromage.jpg" class="card-img-top" alt="Pan de queso, con tomate deshidratado y albahaca en su corteza">
-                    <div class="card-body">
-                        <h5 class="card-title">Pain au formage</h5>
-                        <button class="card_buttonn btn btn-primary">
-                            <i class="bi bi-cart2"></i> $123
-                        </button>
-                    </div>
+            <div class="card carta_card text-center" style="width: 28rem;">
+                <img src="./images/salado_painaufromage.jpg" class="card-img-top" alt="Pan de queso, con tomate deshidratado y albahaca en su corteza">
+                <div class="card-body">
+                    <h5 class="card-title">Pain au formage</h5>
+                    <button class="card_buttonn btn btn-primary">
+                        <i class="bi bi-cart2"></i> $123
+                    </button>
+                </div>
             </div>
-            <div class="card text-center" style="width: 18rem;">
+            <div class="card carta_card text-center" style="width: 28rem;">
                 <img src="./images/salados_sandwich.jpg" class="card-img-top" alt="Crujiente sandwich de omelette combinado con las más frescas verduras">
                 <div class="card-body">
                     <h5 class="card-title">Omelette sandwich</h5>
@@ -229,7 +250,7 @@
                     </button>
                 </div>
             </div>
-            <div class="card text-center" style="width: 18rem;">
+            <div class="card carta_card text-center" style="width: 28rem;">
                 <img src="./images/salados_sandwich2.jpg" class="card-img-top" alt="Sanguche vegetariano de dos pisos con rúcula, tomate, pepino, huevo, aceitunas y hummus">
                 <div class="card-body">
                     <h5 class="card-title">Hummus veggie sandwich</h5>
@@ -239,7 +260,7 @@
                     </button>
                 </div>
             </div>
-            <div class="card text-center" style="width: 18rem;">
+            <div class="card carta_card text-center" style="width: 28rem;">
                 <img src="./images/salados_sandwich3.jpg" class="card-img-top" alt="Sanguche de pollo con verduras salteadas">
                 <div class="card-body">
                     <h5 class="card-title">Chiken salad sandwich</h5>
@@ -249,7 +270,7 @@
                     </button>
                 </div>
             </div>
-            <div class="card text-center" style="width: 18rem;">
+            <div class="card carta_card text-center" style="width: 28rem;">
                 <img src="./images/salados_sandwich4.jpg" class="card-img-top" alt="Sanguche crujiente de panceta, huevo, lechuga, tomate, mozzarella y mayonesa">
                 <div class="card-body">
                     <h5 class="card-title">Bacon sandwich</h5>
@@ -259,7 +280,7 @@
                     </button>
                 </div>
             </div>
-            <div class="card text-center" style="width: 18rem;">
+            <div class="card carta_card text-center" style="width: 28rem;">
                 <img src="./images/salados_scones.jpg" class="card-img-top" alt="Escones de queso">
                 <div class="card-body">
                     <h5 class="card-title">Cheese scons</h5>
@@ -271,11 +292,11 @@
         </div>
     </section>
 
-<!-------------------------------------------------DULCES---------------------------------------------->
+    <!-------------------------------------------------DULCES---------------------------------------------->
     <section id="dulces" class="color_gradient_dark_blue">
         <h2 class="text_2">Dulces</h2>
         <div id="products_container_4">
-            <div class="card text-center" style="width: 18rem;">
+            <div class="card carta_card text-center" style="width: 28rem;">
                 <img src="./images/dulces_banana.bread.jpg" class="card-img-top" alt="Budín de banana con chispas de chocolate">
                 <div class="card-body">
                     <h5 class="card-title">Banana bread</h5>
@@ -285,7 +306,7 @@
                     </button>
                 </div>
             </div>
-            <div class="card text-center" style="width: 18rem;">
+            <div class="card carta_card text-center" style="width: 28rem;">
                 <img src="./images/dulces_brownie.jpg" class="card-img-top" alt="Brownie de chocolate con sal marina">
                 <div class="card-body">
                     <h5 class="card-title">Ultra fudgy sea salt caramel brownie</h5>
@@ -294,7 +315,7 @@
                     </button>
                 </div>
             </div>
-            <div class="card text-center" style="width: 18rem;">
+            <div class="card carta_card text-center" style="width: 28rem;">
                 <img src="./images/dulces_cereal.yogurt.bars.jpg" class="card-img-top" alt="Barra de cereales energética, recubierta de yogurt congelado y frambuesas">
                 <div class="card-body">
                     <h5 class="card-title">Frozen yogurt bars</h5>
@@ -304,7 +325,7 @@
                     </button>
                 </div>
             </div>
-            <div class="card text-center" style="width: 18rem;">
+            <div class="card carta_card text-center" style="width: 28rem;">
                 <img src="./images/dulces_cinnamon.rolls.jpg" class="card-img-top" alt="Rolls de canela, con un delicioso glaseado">
                 <div class="card-body">
                     <h5 class="card-title">Cinnamon rolls</h5>
@@ -313,7 +334,7 @@
                     </button>
                 </div>
             </div>
-            <div class="card text-center" style="width: 18rem;">
+            <div class="card carta_card text-center" style="width: 28rem;">
                 <img src="./images/dulces_cookies.blueberry.jpg" class="card-img-top" alt="Galletas de arándanos, almendras y chispas de chocolate">
                 <div class="card-body">
                     <h5 class="card-title">Blueberry almond cookies</h5>
@@ -323,7 +344,7 @@
                     </button>
                 </div>
             </div>
-            <div class="card text-center" style="width: 18rem;">
+            <div class="card carta_card text-center" style="width: 28rem;">
                 <img src="./images/dulces_muffins.jpg" class="card-img-top" alt="Muffins de banana y café con nueces">
                 <div class="card-body">
                     <h5 class="card-title">Banana coffee muffins</h5>
@@ -333,7 +354,7 @@
                     </button>
                 </div>
             </div>
-            <div class="card text-center" style="width: 18rem;">
+            <div class="card carta_card text-center" style="width: 28rem;">
                 <img src="./images/dulces_mug.cake.jpg" class="card-img-top" alt="Delicioso mug cake de arándanos y frambuesas, super tierno, con una salsa de frutos rojos y arándanos enteros">
                 <div class="card-body">
                     <h5 class="card-title">Jelly mug cake</h5>
@@ -343,7 +364,7 @@
                     </button>
                 </div>
             </div>
-            <div class="card text-center" style="width: 18rem;">
+            <div class="card carta_card text-center" style="width: 28rem;">
                 <img src="./images/dulces_pancakes.jpg" class="card-img-top" alt="Torre de panqueques con frutos rojos frescos y una riquísima salsa de chocolate">
                 <div class="card-body">
                     <h5 class="card-title">Berries pancakes</h5>
@@ -353,7 +374,7 @@
                     </button>
                 </div>
             </div>
-            <div class="card text-center" style="width: 18rem;">
+            <div class="card carta_card text-center" style="width: 28rem;">
                 <img src="./images/dulces_waffles.jpg" class="card-img-top" alt="Waffles con crema chantilly y frutos rojos, espolvoreado con azúcar impalpable">
                 <div class="card-body">
                     <h5 class="card-title">Waffles</h5>
@@ -365,6 +386,8 @@
             </div>
         </div>
     </section>
+</div> 
+
 
 <!-------------------------------------------------FOOTER------------------------------------------------>
     <footer class="color_dark-brown">

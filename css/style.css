@@ -1,6 +1,6 @@
 @charset "UTF-8";
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css");
-#nuestras_delicias_container, #nosotros .background, header .header_nav_button, header .header_logo, .card-body, #center_center {
+#nuestras_delicias .nuestras_delicias_container, #nosotros .background, header .header_nav_button, header .header_logo, .card-body, #center_center {
   display: flex;
   align-items: center;
 }
@@ -98,12 +98,26 @@ button {
   transition: transform 250ms cubic-bezier(0.2, 0.8, 0.4, 1);
   display: flex;
   justify-content: center;
-}
-.card_buttonn p {
   font-size: 1.6rem !important;
 }
+@media screen and (max-width: 1023px) {
+  .card_buttonn {
+    font-size: 1.1rem !important;
+  }
+}
+@media screen and (max-width: 480px) {
+  .card_buttonn {
+    font-size: 0.8rem !important;
+  }
+}
+@media screen and (max-width: 380px) {
+  .card_buttonn {
+    font-size: 0.7rem !important;
+  }
+}
 .card_buttonn:hover {
-  transform: scale(1.1);
+  transform: scale(1.15);
+  margin-bottom: 10px !important;
 }
 .card_buttonn:active {
   transform: scale(0.9);
@@ -174,6 +188,82 @@ button {
   border-radius: 10px;
 }
 
+h2 {
+  font-size: 3rem !important;
+}
+@media screen and (max-width: 1023px) {
+  h2 {
+    font-size: 2.5rem !important;
+  }
+}
+@media screen and (max-width: 480px) {
+  h2 {
+    font-size: 2.2rem !important;
+  }
+}
+@media screen and (max-width: 380px) {
+  h2 {
+    font-size: 2.1rem !important;
+  }
+}
+
+h3, h4 {
+  font-size: 2.5rem !important;
+}
+@media screen and (max-width: 1023px) {
+  h3, h4 {
+    font-size: 2rem !important;
+  }
+}
+@media screen and (max-width: 480px) {
+  h3, h4 {
+    font-size: 1.7rem !important;
+  }
+}
+@media screen and (max-width: 380px) {
+  h3, h4 {
+    font-size: 1.6rem !important;
+  }
+}
+
+h5 {
+  font-size: 1.8rem !important;
+}
+@media screen and (max-width: 1023px) {
+  h5 {
+    font-size: 1.3rem !important;
+  }
+}
+@media screen and (max-width: 480px) {
+  h5 {
+    font-size: 1rem !important;
+  }
+}
+@media screen and (max-width: 380px) {
+  h5 {
+    font-size: 0.9rem !important;
+  }
+}
+
+p, i {
+  font-size: 1.6rem !important;
+}
+@media screen and (max-width: 1023px) {
+  p, i {
+    font-size: 1.1rem !important;
+  }
+}
+@media screen and (max-width: 480px) {
+  p, i {
+    font-size: 0.8rem !important;
+  }
+}
+@media screen and (max-width: 380px) {
+  p, i {
+    font-size: 0.7rem !important;
+  }
+}
+
 header {
   width: 100%;
   position: sticky;
@@ -241,11 +331,11 @@ header nav .hamburguesa span {
   }
 }
 header nav ul {
-  padding-top: 10px;
   align-items: center;
 }
 @media screen and (max-width: 767px) {
   header nav ul {
+    padding-top: 10px;
     align-items: initial;
   }
 }
@@ -361,52 +451,6 @@ header .desplegado {
   min-height: 100vh;
   height: fit-content;
 }
-#inicio .carrusel {
-  height: 63vh;
-  min-width: 100%;
-  width: auto;
-}
-@media screen and (max-width: 992px) {
-  #inicio .carrusel {
-    height: 69vh;
-    width: auto;
-  }
-}
-@media screen and (max-width: 767px) {
-  #inicio .carrusel {
-    height: 64vh;
-    width: auto;
-  }
-}
-@media screen and (max-width: 480px) {
-  #inicio .carrusel {
-    height: 67vh;
-    width: auto;
-  }
-}
-#inicio .carrusel_img {
-  height: 63vh;
-  min-width: 100% !important;
-  width: max-content !important;
-}
-@media screen and (max-width: 992px) {
-  #inicio .carrusel_img {
-    height: 69vh;
-    width: max-content !important;
-  }
-}
-@media screen and (max-width: 767px) {
-  #inicio .carrusel_img {
-    height: 64vh;
-    width: max-content !important;
-  }
-}
-@media screen and (max-width: 480px) {
-  #inicio .carrusel_img {
-    height: 67vh;
-    width: max-content !important;
-  }
-}
 #inicio .carrusel_botones_container button {
   border-top: 0px;
   border-bottom: 0px;
@@ -418,7 +462,7 @@ header .desplegado {
   margin-right: 20px !important;
   background-color: #203A43 !important;
 }
-#inicio a {
+#inicio .container_botones_principales a {
   text-align: center;
   margin: 20px;
   border-radius: 5%;
@@ -433,7 +477,7 @@ header .desplegado {
   display: inline-block;
   cursor: pointer;
 }
-#inicio a:before {
+#inicio .container_botones_principales a:before {
   content: "";
   display: block;
   position: absolute;
@@ -447,35 +491,38 @@ header .desplegado {
   transition: transform 0.6s cubic-bezier(0.53, 0.21, 0, 1);
   transform: 0.6s cu;
 }
-#inicio a:hover::before {
+#inicio .container_botones_principales a:hover::before {
   transform-origin: 0 0;
   transform: scaleX(1);
 }
-#inicio a:hover span {
+#inicio .container_botones_principales a:hover span {
   color: #A37C40;
 }
-#inicio a span {
+#inicio .container_botones_principales a span {
   position: relative;
   transition: color 0.6s cubic-bezier(0.53, 0.21, 0, 1);
 }
-#inicio a span h3 {
-  font-size: 2.5rem;
+#inicio .container_botones_principales a span img {
+  height: 80px; /**/
+  width: auto;
 }
-
 @media screen and (max-width: 767px) {
-  #inicio a {
-    width: 250px;
-  }
-  #inicio div a img {
+  #inicio .container_botones_principales a span img {
     height: 24px;
     width: 24px;
   }
 }
+@media screen and (max-width: 767px) {
+  #inicio .container_botones_principales a {
+    width: 250px;
+  }
+}
 @media screen and (max-width: 320px) {
-  #inicio a {
+  #inicio .container_botones_principales a {
     width: 200px;
   }
 }
+
 #nosotros .background {
   background-image: url("../images/lugar3.png");
   height: 750px;
@@ -485,52 +532,50 @@ header .desplegado {
   background-size: cover;
   justify-content: center;
 }
-
-#nosotros_all {
+#nosotros .background #nosotros_all {
   opacity: 0.85;
   width: 60%;
   height: auto;
   border: #A37C40 solid 10px;
 }
-#nosotros_all p {
+#nosotros .background #nosotros_all p {
   text-align: justify;
+  margin-right: 10px;
+  margin-left: 5px;
 }
-
-#nuestras_delicias_container {
-  width: 100%;
-  justify-content: space-around;
+@media screen and (max-width: 480px) {
+  #nosotros .background #nosotros_all p {
+    text-align: left;
+  }
+}
+@media screen and (max-width: 480px) {
+  #nosotros .background #nosotros_all p {
+    margin-bottom: 0;
+  }
 }
 
 #nuestras_delicias h2 {
   color: rgb(126, 103, 10);
   padding-top: 10px;
 }
-
-.row {
-  margin-right: 0;
+#nuestras_delicias .nuestras_delicias_container {
+  width: 100%;
+  justify-content: space-evenly;
+  padding: 50px 10px;
 }
-
-#ver_todo {
-  display: none;
-}
-
-.destacados {
+#nuestras_delicias .nuestras_delicias_container .destacados {
   padding: 3px;
+  width: 207px;
+  height: 440px;
   border-radius: 10px;
   background-image: linear-gradient(270deg, rgb(126, 103, 10), rgb(158, 158, 42), rgb(158, 158, 42), rgb(126, 103, 10));
   background-size: 400% 100%;
   animation: loading 8s ease-in-out infinite;
   margin-bottom: 30px;
 }
-.destacados img {
+#nuestras_delicias .nuestras_delicias_container .destacados img {
   border-radius: 10px;
 }
-
-.altura {
-  height: 670px;
-  padding: 20px 0 30px 0;
-}
-
 @keyframes loading {
   from {
     background-position: 200% 0;
@@ -539,32 +584,69 @@ header .desplegado {
     background-position: -200% 0;
   }
 }
+
+@media screen and (max-width: 992px) {
+  #nuestras_delicias_img_4 {
+    display: none; /*Irá como carrusel*/
+  }
+}
+@media screen and (max-width: 767px) {
+  #nuestras_delicias_img_3 {
+    display: none; /*Irá como carrusel*/
+  }
+}
+@media screen and (max-width: 576px) {
+  #nuestras_delicias_img_2 {
+    display: none; /*Irá como carrusel*/
+  }
+}
 /*---------------------CARTA---------------------*/
 .carta_nav {
   width: 100%;
   position: sticky;
-  top: 78px;
+  top: 62px;
   z-index: 1;
+  padding: 7px 0;
   text-align: center;
   display: flex;
   justify-content: center;
   border-bottom: black solid 2px;
 }
-
+@media screen and (max-width: 992px) {
+  .carta_nav {
+    top: 46px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .carta_nav {
+    top: 82px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .carta_nav {
+    top: 62px;
+  }
+}
 .carta_nav .container-fluid {
   justify-content: center;
 }
-
-.color_gradient_dark_blue h2 {
-  color: #A37C40;
-}
-
 .carta_nav a {
+  font-size: 1.5rem;
   display: inline-block;
   position: relative;
   cursor: pointer;
 }
-
+@media screen and (max-width: 767px) {
+  .carta_nav a {
+    font-size: 1.5rem;
+    padding: 0;
+  }
+}
+@media screen and (max-width: 480px) {
+  .carta_nav a {
+    font-size: 1.2rem;
+  }
+}
 .carta_nav a::after {
   content: "";
   position: absolute;
@@ -577,10 +659,13 @@ header .desplegado {
   transform-origin: bottom right;
   transition: transform 0.4s cubic-bezier(0.86, 0, 0.07, 1);
 }
-
 .carta_nav a:hover::after {
   transform: scaleX(1);
   transform-origin: bottom left;
+}
+
+.carta_container h2 {
+  color: #A37C40;
 }
 
 #products_container_1, #products_container_2, #products_container_3 {
@@ -602,21 +687,155 @@ header .desplegado {
 }
 
 #cafes {
-  padding-top: 137px;
+  padding-top: 120px;
+}
+@media screen and (max-width: 992px) {
+  #cafes {
+    padding-top: 104px;
+  }
+}
+@media screen and (max-width: 767px) {
+  #cafes {
+    padding-top: 130px;
+  }
+}
+@media screen and (max-width: 480px) {
+  #cafes {
+    padding-top: 104px;
+  }
+}
+@media screen and (max-width: 330px) {
+  #cafes {
+    padding-top: 122px;
+  }
 }
 
 #jugos {
-  padding-top: 137px;
+  padding-top: 120px;
+}
+@media screen and (max-width: 992px) {
+  #jugos {
+    padding-top: 104px;
+  }
+}
+@media screen and (max-width: 767px) {
+  #jugos {
+    padding-top: 130px;
+  }
+}
+@media screen and (max-width: 480px) {
+  #jugos {
+    padding-top: 104px;
+  }
+}
+@media screen and (max-width: 330px) {
+  #jugos {
+    padding-top: 122px;
+  }
 }
 
 #salados {
-  padding-top: 137px;
+  padding-top: 120px;
+}
+@media screen and (max-width: 992px) {
+  #salados {
+    padding-top: 104px;
+  }
+}
+@media screen and (max-width: 767px) {
+  #salados {
+    padding-top: 130px;
+  }
+}
+@media screen and (max-width: 480px) {
+  #salados {
+    padding-top: 104px;
+  }
+}
+@media screen and (max-width: 330px) {
+  #salados {
+    padding-top: 122px;
+  }
 }
 
 #dulces {
-  padding-top: 137px;
+  padding-top: 120px;
+}
+@media screen and (max-width: 992px) {
+  #dulces {
+    padding-top: 104px;
+  }
+}
+@media screen and (max-width: 767px) {
+  #dulces {
+    padding-top: 130px;
+  }
+}
+@media screen and (max-width: 480px) {
+  #dulces {
+    padding-top: 104px;
+  }
+}
+@media screen and (max-width: 330px) {
+  #dulces {
+    padding-top: 122px;
+  }
 }
 
+@media screen and (max-width: 1200px) {
+  #products_container_1, #products_container_2 {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+  }
+  #products_container_3 {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+  }
+  #products_container_4 {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+  }
+}
+@media screen and (max-width: 992px) {
+  #products_container_1, #products_container_2 {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+  }
+  #products_container_3 {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+  }
+  #products_container_4 {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+  }
+}
+@media screen and (max-width: 620px) {
+  #products_container_1, #products_container_2 {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(5, 1fr);
+  }
+  #products_container_3 {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(7, 1fr);
+  }
+  #products_container_4 {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(9, 1fr);
+  }
+}
+@media screen and (max-width: 480px) {
+  /*---------------------CARTA---------------------*/
+  .carta_nav img {
+    width: 12px;
+    height: auto;
+  }
+}
+@media screen and (max-width: 320px) {
+  .carta_card {
+    width: 20rem !important;
+  }
+}
 /*-------------------RESERVAS-------------------*/
 #reservas_body {
   height: 100vh;
@@ -633,10 +852,26 @@ header .desplegado {
   background-image: url("../images/lugar2.png");
   background-size: cover;
   width: 100%;
-  height: 520px;
+  height: calc(100vh - 222px);
+}
+@media screen and (max-width: 992px) {
+  #reservas .background {
+    height: calc(100vh - 206px);
+  }
+}
+@media screen and (max-width: 767px) {
+  #reservas .background {
+    height: calc(100vh - 242px);
+  }
+}
+@media screen and (max-width: 480px) {
+  #reservas .background {
+    height: calc(100vh - 182px);
+  }
 }
 
 #reservas .color_brown {
+  font-size: 1.5rem;
   opacity: 0.85;
   height: auto;
   width: fit-content;
@@ -648,6 +883,57 @@ header .desplegado {
   justify-content: space-between;
   align-content: space-between;
   align-items: center;
+}
+#reservas .color_brown label {
+  font-size: 1rem;
+}
+@media screen and (max-width: 1023px) {
+  #reservas .color_brown label {
+    font-size: 0.7rem !important;
+  }
+}
+@media screen and (max-width: 480px) {
+  #reservas .color_brown label {
+    font-size: 0.4rem !important;
+  }
+}
+@media screen and (max-width: 380px) {
+  #reservas .color_brown label {
+    font-size: 0.3rem !important;
+  }
+}
+#reservas .color_brown option {
+  font-size: 1.2rem;
+}
+@media screen and (max-width: 1023px) {
+  #reservas .color_brown option {
+    font-size: 0.9rem !important;
+  }
+}
+@media screen and (max-width: 480px) {
+  #reservas .color_brown option {
+    font-size: 0.6rem !important;
+  }
+}
+@media screen and (max-width: 380px) {
+  #reservas .color_brown option {
+    font-size: 0.5rem !important;
+  }
+}
+@media screen and (max-width: 1023px) {
+  #reservas .color_brown {
+    font-size: 1.2rem !important;
+  }
+}
+@media screen and (max-width: 480px) {
+  #reservas .color_brown {
+    font-size: 0.9rem !important;
+  }
+}
+@media screen and (max-width: 380px) {
+  #reservas .color_brown {
+    font-size: 0.8rem !important;
+  }
 }
 
 #reservas .color_brown button {
@@ -703,16 +989,33 @@ header .desplegado {
   transform: scale(0.9);
 }
 
+@media screen and (max-width: 767px) {
+  /*-------------------RESERVAS-------------------*/
+  #reservas .color_brown {
+    width: fit-content;
+    width: -moz-fit-content;
+  }
+}
+@media screen and (max-width: 600px) {
+  /*-------------------RESERVAS-------------------*/
+  #reservas .color_brown, #reservas button a {
+    font-size: 1.2rem;
+  }
+}
+@media screen and (max-width: 320px) {
+  /*-------------------RESERVAS-------------------*/
+  #reservas .color_brown {
+    width: 100%;
+    border: none;
+  }
+  #reservas form ul {
+    flex-direction: column;
+  }
+}
 /*-------------------CONTACTO-------------------*/
 #contacto_body {
   height: 100vh;
   background-color: #B49082;
-}
-
-#contacto_footer {
-  position: fixed;
-  width: 100%;
-  bottom: 0;
 }
 
 .contacto_img_container {
@@ -733,10 +1036,42 @@ header .desplegado {
 
 .contacto-label {
   color: #A37C40;
+  font-size: 1.5rem;
+}
+@media screen and (max-width: 1023px) {
+  .contacto-label {
+    font-size: 1.2rem !important;
+  }
+}
+@media screen and (max-width: 480px) {
+  .contacto-label {
+    font-size: 0.9rem !important;
+  }
+}
+@media screen and (max-width: 380px) {
+  .contacto-label {
+    font-size: 0.8rem !important;
+  }
 }
 
-#contacto p {
+#contacto input, #contacto textarea {
   color: #A37C40;
+  font-size: 1.5rem;
+}
+@media screen and (max-width: 1023px) {
+  #contacto input, #contacto textarea {
+    font-size: 1.2rem !important;
+  }
+}
+@media screen and (max-width: 480px) {
+  #contacto input, #contacto textarea {
+    font-size: 0.9rem !important;
+  }
+}
+@media screen and (max-width: 380px) {
+  #contacto input, #contacto textarea {
+    font-size: 0.8rem !important;
+  }
 }
 
 #contacto form div {
@@ -745,11 +1080,11 @@ header .desplegado {
 }
 
 #contacto_div_left {
-  margin-right: 10%;
+  margin-right: 5%;
 }
 
 #contacto_div_right {
-  margin-left: 10%;
+  margin-left: 5%;
 }
 
 #contacto form div button {
@@ -758,9 +1093,9 @@ header .desplegado {
   align-self: flex-end;
 }
 
-#bigger {
+.bigger {
   width: 470px;
-  height: 140px;
+  height: 130px;
 }
 
 #contacto button {
@@ -771,6 +1106,22 @@ header .desplegado {
   margin: 2px 0 0 0;
   border-radius: 5px;
   transition: transform 250ms cubic-bezier(0.2, 0.8, 0.4, 1);
+  font-size: 1.2rem;
+}
+@media screen and (max-width: 1023px) {
+  #contacto button {
+    font-size: 0.7rem !important;
+  }
+}
+@media screen and (max-width: 480px) {
+  #contacto button {
+    font-size: 0.4rem !important;
+  }
+}
+@media screen and (max-width: 380px) {
+  #contacto button {
+    font-size: 0.3rem !important;
+  }
 }
 
 #contacto button:hover {
@@ -781,82 +1132,7 @@ header .desplegado {
   transform: scale(0.9);
 }
 
-/*--------------------FOOTER--------------------*/
-footer {
-  color: black;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-}
-footer div {
-  margin-left: 10px;
-}
-footer div a {
-  display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-}
-footer div a i {
-  margin-right: 10px;
-}
-footer iframe {
-  padding: 5px;
-  width: 160px;
-  height: 160px;
-}
-
-.space_around {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-}
-
-@media screen and (max-width: 1200px) {
-  #products_container_1, #products_container_2 {
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-  }
-  #products_container_3 {
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(3, 1fr);
-  }
-  #products_container_4 {
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(3, 1fr);
-  }
-}
-@media screen and (max-width: 992px) {
-  #products_container_1, #products_container_2 {
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(3, 1fr);
-  }
-  #products_container_3 {
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(4, 1fr);
-  }
-  #products_container_4 {
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(5, 1fr);
-  }
-  /*---------------NUESTRASS DELICIAS--------------*/
-  #nuestras_delicias_img_4 {
-    display: none; /*Irá como carrusel*/
-  }
-}
 @media screen and (max-width: 767px) {
-  /*---------------NUESTRASS DELICIAS--------------*/
-  #nuestras_delicias_img_3 {
-    display: none; /*Irá como carrusel*/
-  }
-  .carta_nav {
-    top: 68px;
-  }
-  /*-------------------RESERVAS-------------------*/
-  #reservas .color_brown {
-    width: fit-content;
-    width: -moz-fit-content;
-  }
-  /*-------------------CONTACTO-------------------*/
   #contacto img {
     height: 300px;
     width: auto;
@@ -867,131 +1143,22 @@ footer iframe {
   #contacto_div_right {
     margin-left: 5%;
   }
-  #bigger {
+  .bigger {
     width: 300px;
   }
 }
-@media screen and (max-width: 620px) {
-  #products_container_1, #products_container_2 {
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(5, 1fr);
-  }
-  #products_container_3 {
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(7, 1fr);
-  }
-  #products_container_4 {
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(9, 1fr);
-  }
-}
 @media screen and (max-width: 600px) {
-  /*---------------------CARTA---------------------*/
-  #carta_nav {
-    top: 92px;
-  }
-  /*#products_container_1, #products_container_2, #products_container_3, #products_container_4{
-      justify-items: start;
-      padding-left: 20px;
-  }*/
-  /*-------------------RESERVAS-------------------*/
-  #reservas .color_brown, #reservas button a {
-    font-size: 1.2rem;
-  }
-  /*-------------------FOOTER -------------------*/
-  .space_around {
-    display: none;
-  }
-}
-@media screen and (max-width: 576px) {
-  #nuestras_delicias_img_2 {
-    display: none; /*Irá como carrusel*/
+  .bigger {
+    width: 200px;
   }
 }
 @media screen and (max-width: 480px) {
-  /*-------------------NOSOTROS-------------------*/
-  #nosotros .background {
-    height: 500px;
-  }
-  #nosotros_all {
-    font-size: 1.2rem;
-  }
-  /*---------------NUESTRASS DELICIAS--------------*/
-  #cafes {
-    padding-top: 137px;
-  }
-  #cafes h2 {
-    font-size: 2rem;
-  }
-  #jugos {
-    padding-top: 137px;
-  }
-  #jugos h2 {
-    font-size: 2rem;
-  }
-  #salados {
-    padding-top: 137px;
-  }
-  #salados h2 {
-    font-size: 2rem;
-  }
-  #dulces {
-    padding-top: 137px;
-  }
-  #dulces h2 {
-    font-size: 2rem;
-  }
-  /*-------------------CONTACTO-------------------*/
-  #bigger {
-    width: 200px;
-  }
-  #contacto_footer {
-    position: initial;
-  }
-  #reservas_footer {
-    position: initial;
-  }
-  /*--------------------FOOTER--------------------*/
-  footer iframe {
-    width: 120px;
-    height: 120px;
+  .bigger {
+    width: 150px;
+    height: 100px;
   }
 }
 @media screen and (max-width: 320px) {
-  .marco {
-    padding-top: 213px;
-  }
-  /*---------------------CARTA---------------------*/
-  #carta_nav {
-    top: 213px;
-    font-size: 1.2rem;
-    height: 36px;
-  }
-  #carta_nav img {
-    width: 12px;
-    height: auto;
-  }
-  #cafes {
-    padding-top: 259px;
-  }
-  #jugos {
-    padding-top: 259px;
-  }
-  #salados {
-    padding-top: 259px;
-  }
-  #dulces {
-    padding-top: 259px;
-  }
-  /*-------------------RESERVAS-------------------*/
-  #reservas .color_brown {
-    width: 100%;
-    border: none;
-  }
-  #reservas form ul {
-    flex-direction: column;
-  }
-  /*-------------------CONTACTO-------------------*/
   #contacto form {
     flex-direction: column;
     justify-content: center;
@@ -1002,11 +1169,85 @@ footer iframe {
     width: 60%;
   }
   #contacto_div_right {
+    align-self: center;
+    width: 60%;
     margin: 30px 5px 30px 5px;
   }
-  #bigger {
-    width: 100%;
-    height: 140px;
+}
+/*--------------------FOOTER--------------------*/
+footer {
+  color: black;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+footer div {
+  margin-left: 10px;
+}
+footer div h4 {
+  margin-bottom: 20px;
+}
+footer div a {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+}
+footer div a i {
+  font-size: 1.8rem;
+  margin-right: 10px;
+}
+@media screen and (max-width: 1023px) {
+  footer div a i {
+    font-size: 1.3rem;
+  }
+}
+@media screen and (max-width: 420px) {
+  footer div a i {
+    font-size: 1.3rem;
+  }
+}
+@media screen and (max-width: 380px) {
+  footer div a i {
+    font-size: 1rem;
+  }
+}
+footer .space_around {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+@media screen and (max-width: 600px) {
+  footer .space_around {
+    display: none;
+  }
+}
+footer iframe {
+  padding: 5px;
+  width: 160px;
+  height: 160px;
+}
+@media screen and (max-width: 480px) {
+  footer iframe {
+    width: 120px;
+    height: 120px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  /*-------------------NOSOTROS-------------------*/
+  #nosotros .background {
+    height: 500px;
+  }
+  #nosotros_all {
+    font-size: 1.2rem;
+  }
+  #reservas_footer {
+    position: initial;
+  }
+}
+@media screen and (max-width: 320px) {
+  .marco {
+    padding-top: 213px;
   }
 }
 

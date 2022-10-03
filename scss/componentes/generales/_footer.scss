@@ -6,24 +6,43 @@ footer{
     justify-content: space-between;
     div{
         margin-left: 10px;
+        h4{
+            margin-bottom: 20px;
+        }
         a{
             display: flex;
             flex-direction: row;
             align-items: flex-start;
             i{
+                font-size: 1.8rem;
                 margin-right: 10px;
+                @media screen and (max-width: 1023px) {
+                    font-size: 1.3rem;
+                }
+                @media screen and (max-width: 420px) {
+                    font-size: 1.3rem;
+                }
+                @media screen and (max-width: 380px) {
+                    font-size: 1rem;
+                }
             }
+        }
+    }
+    .space_around{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        @media screen and (max-width: 600px) {
+            display: none;
         }
     }
     iframe{
         padding: 5px;
         width: 160px;
         height: 160px;
+        @media screen and (max-width: 480px) {
+            width: 120px;
+            height: 120px;
+        }
     }
-}
-
-.space_around{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
 }
