@@ -1,0 +1,154 @@
+header{
+    width: 100%;
+    position: sticky;
+    top: 0px;
+    z-index: 5;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    border-bottom: black solid 2px;
+    .header_logo{
+        @extend %flexac;
+        flex-flow: row wrap;
+        justify-content: center;
+        img{
+            margin: 0 20px 0 10px;
+            @media screen and (max-width: 992px) {
+                width: 30px;
+                height: auto;
+            }
+            @media screen and (max-width: 480px) {
+                width: 25px;
+                height: auto;
+            }
+        }
+        h1{
+            font-size: 4rem;
+            @media screen and (max-width: 992px) {
+                font-size: 2.4rem;
+            }
+            @media screen and (max-width: 480px) {
+                font-size: 1.4rem;
+            }
+        }
+    }
+    nav{
+        align-self: flex-end;
+        .hamburguesa{
+            height: 40px;
+            width: 40px;
+            padding: 0;
+            span{
+                height: 2.5em;
+                width: 2.5em;
+                @media screen and (max-width: 480px) {
+                    height: 1.5em;
+                    width: 1.5em;
+                }
+            }
+            @media screen and (max-width: 480px) {
+                height: 25px;
+                width: 25px;
+            }
+        }
+        ul{
+            padding-top: 10px;
+            align-items: center;
+            @media screen and (max-width: 767px) {
+                align-items: initial;
+            }
+            li{
+                padding: 0 10px;
+                height: fit-content;
+                .login{
+                    height: 50px;
+                    width: 50px;
+                    border-radius: 50%;
+                    border: none;
+                    margin: 0 10px 0 0;
+                    img{
+                        @media screen and (max-width: 992px) {
+                            width: 30px;
+                            height: 30px;
+                        }
+                        @media screen and (max-width: 767px) {
+                            width: 40px;
+                            height: 40px;
+                        }
+                        @media screen and (max-width: 480px) {
+                            width: 25px;
+                            height: 25px;
+                        }
+                    }
+                    @media screen and (max-width: 992px) {
+                        width: 30px;
+                        height: 30px;
+                    }
+                    @media screen and (max-width: 767px) {
+                        margin: 0;
+                        width: 40px;
+                        height: 40px;
+                    }
+                    @media screen and (max-width: 480px) {
+                        width: 25px;
+                        height: 25px;
+                    }
+                }
+                @media screen and (max-width: 767px) {
+                    font-size: 1.5rem;
+                    padding: 0;
+                }
+                @media screen and (max-width: 480px) {
+                    font-size: 1.2rem;
+                }
+            }
+        }
+    }
+    .header_nav_button{
+        @extend %flexac;
+        @media screen and (max-width: 480px) {
+            align-self: flex-start;
+        }
+    }
+    .logos{
+        display: none;
+        @media screen and (max-width: 767px) {
+            display: flex;
+            justify-content: space-between;
+            padding-left: 0;
+            li{
+                padding: 0;
+            }
+        }
+    }
+    .bg-light-propio {
+        background-color: transparent !important;
+    }
+    .active-propio{
+        text-decoration: underline;
+        color: $c-secundario !important;
+    }
+    .nav-link-propio{
+        color: var(--bs-body-color);
+        font-size: nth($list: $font-size, $n: 6);
+    }
+    .nav-link-propio:hover{
+        color: var(--bs-body-color);
+    }
+    .desplegado{
+        width: min-content;
+    }
+    @media screen and (max-width: 767px) {
+        display: block;
+    }
+    @media screen and (max-width: 767px) {
+        .navbar-nav-propio li{
+            order: 2;
+        }
+        .navbar-nav-propio .userr{
+            order: 1;
+        }
+    }
+}
+
+

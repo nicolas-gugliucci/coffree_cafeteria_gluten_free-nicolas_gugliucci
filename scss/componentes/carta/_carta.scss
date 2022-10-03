@@ -1,0 +1,77 @@
+/*---------------------CARTA---------------------*/
+.carta_nav{
+    width: 100%;
+    position: sticky;
+    top: 78px;
+    z-index: 1;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    border-bottom: black solid 2px;
+}
+
+.carta_nav .container-fluid{
+    justify-content: center;
+}
+
+.color_gradient_dark_blue h2{
+    color: #A37C40;
+}
+
+.carta_nav a{
+	display: inline-block;
+	position: relative;
+	cursor: pointer;
+}
+
+.carta_nav a::after {
+	content: '';
+	position: absolute;
+	width: 100%;
+	transform: scaleX(0);
+	height: 2px;
+	top: 110%;
+	left: 0;
+	background-color: #98473E;
+	transform-origin: bottom right;
+	transition: transform .4s cubic-bezier(.86,0,.07,1);
+}
+  
+.carta_nav a:hover::after {
+	transform: scaleX(1);
+	transform-origin: bottom left;
+}
+
+#products_container_1, #products_container_2, #products_container_3{
+    margin-top: 40px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    row-gap: 30px;
+    justify-items: center;
+}
+
+#products_container_4{
+    padding: 40px 0 30px 0;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    row-gap: 30px;
+    justify-items: center;
+}
+
+#cafes{
+    padding-top: 137px;
+}
+
+#jugos{
+    padding-top: 137px;
+}
+
+#salados{
+    padding-top: 137px;
+}
+
+#dulces{
+    padding-top: 137px;
+}
