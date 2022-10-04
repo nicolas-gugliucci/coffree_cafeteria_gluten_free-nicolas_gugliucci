@@ -533,7 +533,7 @@ header .desplegado {
   justify-content: center;
 }
 #nosotros .background #nosotros_all {
-  opacity: 0.85;
+  background-color: rgba(180, 144, 130, 0.85);
   width: 60%;
   height: auto;
   border: #A37C40 solid 10px;
@@ -554,9 +554,18 @@ header .desplegado {
   }
 }
 
+@media screen and (max-width: 480px) {
+  #nosotros .background {
+    height: 500px;
+  }
+  #nosotros_all {
+    font-size: 1.2rem;
+  }
+}
 #nuestras_delicias h2 {
   color: rgb(126, 103, 10);
-  padding-top: 10px;
+  padding-top: 20px;
+  padding-left: 30px;
 }
 #nuestras_delicias .nuestras_delicias_container {
   width: 100%;
@@ -666,6 +675,7 @@ header .desplegado {
 
 .carta_container h2 {
   color: #A37C40;
+  padding-left: 30px;
 }
 
 #products_container_1, #products_container_2, #products_container_3 {
@@ -847,6 +857,11 @@ header .desplegado {
   width: 100%;
   bottom: 0;
 }
+@media screen and (max-width: 480px) {
+  #reservas_footer {
+    position: initial;
+  }
+}
 
 #reservas .background {
   background-image: url("../images/lugar2.png");
@@ -872,7 +887,7 @@ header .desplegado {
 
 #reservas .color_brown {
   font-size: 1.5rem;
-  opacity: 0.85;
+  background-color: rgba(180, 144, 130, 0.85);
   height: auto;
   width: fit-content;
   width: -moz-fit-content;
@@ -1230,24 +1245,6 @@ footer iframe {
   footer iframe {
     width: 120px;
     height: 120px;
-  }
-}
-
-@media screen and (max-width: 480px) {
-  /*-------------------NOSOTROS-------------------*/
-  #nosotros .background {
-    height: 500px;
-  }
-  #nosotros_all {
-    font-size: 1.2rem;
-  }
-  #reservas_footer {
-    position: initial;
-  }
-}
-@media screen and (max-width: 320px) {
-  .marco {
-    padding-top: 213px;
   }
 }
 
