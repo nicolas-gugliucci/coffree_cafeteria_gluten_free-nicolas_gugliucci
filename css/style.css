@@ -951,7 +951,7 @@ header .desplegado {
   }
 }
 
-#reservas .color_brown button {
+.end {
   align-self: flex-end;
 }
 
@@ -1002,6 +1002,20 @@ header .desplegado {
 
 #reservas button:active {
   transform: scale(0.9);
+}
+
+.continuar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.continuar button {
+  margin-top: 30px !important;
+}
+
+.confirmar {
+  display: flex;
+  flex-direction: column;
 }
 
 @media screen and (max-width: 767px) {

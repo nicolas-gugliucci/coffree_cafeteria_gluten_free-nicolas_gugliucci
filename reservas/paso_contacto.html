@@ -88,29 +88,32 @@
                         <li>3. Confirmación</li>
                     </ol>
                 </nav>
-                <form>
+                <form class="continuar">
                     <div class="row">
                         <div class="text_2 mb-3 col">
-                            <label class="form-label">Nombre</label>
-                            <input type="text" class="form-control">
+                            <label for="nombre_r" class="form-label">Nombre</label>
+                            <input type="text" class="form-control" id="nombre_r" name="nombre_r" required>
                         </div>
                         <div class="text_2 mb-3 col">
-                            <label class="form-label">Apellido</label>
-                            <input type="text" class="form-control">
+                            <label for="apellido_r" class="form-label">Apellido</label>
+                            <input type="text" class="form-control" id="apellido_r" name="apellido_r" required>
                         </div>
                     </div>
                     <div class="row">
                         <div class="text_2 mb-3 col">
-                            <label class="form-label">Dirección de correo</label>
-                            <input type="text" class="form-control">
+                            <label for="email_r" class="form-label">Dirección de correo</label>
+                            <input type="email" class="form-control" id="email_r" name="email_r" required>
                         </div>
                         <div class="text_2 mb-3 col">
-                            <label class="form-label">Número de teléfono</label>
-                            <input type="text" class="form-control">
+                            <label for="telefono_r" class="form-label">Número de teléfono</label>
+                            <input type="tel" class="form-control" id="telefono_r" name="telefono_r" required>
                         </div>
                     </div>
+                    <button class="text_2" type="submit">
+                        Comprobar
+                    </button>
                 </form>
-                <button class="text_2">
+                <button class="text_2 end">
                     <a href="./paso_confirmacion.html">Continuar</a>
                 </button>
             </div>

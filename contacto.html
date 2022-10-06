@@ -85,24 +85,24 @@
         <form>
             <div id="contacto_div_left">
                 <div class="text_3 mb-3">
-                    <label for="exampleFormControlInput1" class="form-label contacto-label">Nombre</label>
-                    <input type="text" class="form-control" id="exampleFormControlInput1">
+                    <label for="nombre" class="form-label contacto-label">Nombre</label>
+                    <input type="text" class="form-control" id="nombre" name="nombre" required>
                 </div>
                 <div class="text_3 mb-3">
-                    <label for="exampleFormControlInput1" class="form-label contacto-label">Apellido</label>
-                    <input type="text" class="form-control" id="exampleFormControlInput1">
+                    <label for="apellido" class="form-label contacto-label">Apellido</label>
+                    <input type="text" class="form-control" id="apellido" name="apellido" required>
                 </div>
                 <div class="text_3 mb-3">
-                    <label for="exampleFormControlInput1" class="form-label contacto-label">Dirección de correo</label>
-                    <input type="email" class="form-control" id="exampleFormControlInput1">
+                    <label for="email" class="form-label contacto-label">Dirección de correo</label>
+                    <input type="email" class="form-control" id="email" name="email" required>
                 </div>
             </div>
             <div id="contacto_div_right">
                 <div class="text_3 mb-3">
-                    <label for="exampleFormControlTextarea1" class="form-label contacto-label">Consúltanos</label>
-                    <textarea class="bigger form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                    <label for="comentario" class="form-label contacto-label">Consúltanos</label>
+                    <textarea class="bigger form-control" id="comentario" name="comentario" rows="3" required></textarea>
                 </div>
-                <button>Enviar</button>
+                <button type="submit">Enviar</button>
             </div>
         </form>
     </section>

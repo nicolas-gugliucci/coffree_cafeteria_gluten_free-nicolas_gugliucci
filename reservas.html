@@ -88,11 +88,11 @@
                         <li>3. Confirmación</li>
                     </ol>
                 </nav>
-                <form>
+                <form class="continuar">
                     <div class="row">
                         <div class="col">
                             <div class="form-floating">
-                                <select class="form-select text_2" id="floatingSelect" aria-label="Floating label select example">
+                                <select class="form-select text_2" id="personas" name="personas" aria-label="Floating label select example" required>
                                     <option value="">Escoger una</option>
                                     <option value="1">1</option>
                                     <option value="2">2</option>
@@ -100,23 +100,26 @@
                                     <option value="4">4</option>
                                     <option value="5">5+</option>
                                 </select>
-                                <label for="floatingSelect">Cantidad de personas</label>
+                                <label for="personas">Cantidad de personas</label>
                             </div>
                         </div>
                         <div class="col">
                             <div class="form-floating">
-                                <select class="form-select text_2" id="floatingSelect" aria-label="Floating label select example">
+                                <select class="form-select text_2" id="horario" name="horario" aria-label="Floating label select example" required>
                                     <option value="">Escoger una</option>
                                     <option value="1">Desayuno</option>
                                     <option value="2">Merienda</option>
                                 </select>
-                                <label for="floatingSelect">Opción</label>
+                                <label for="horario">Opción</label>
                             </div>
                         </div>
                     </div>
                     <!--INSERTAR CALENDARIO-->
+                    <button class="text_2" type="submit">
+                        Comprobar
+                    </button>
                 </form>
-                <button class="text_2">
+                <button class="text_2 end">
                     <a href="./reservas/paso_contacto.html">Continuar</a>
                 </button>
             </div>
