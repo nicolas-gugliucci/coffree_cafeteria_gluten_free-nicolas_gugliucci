@@ -66,9 +66,24 @@
                                 </ol>
                             </li>
                             <li class="nav-item userr">
-                                <button class="login">
+                                <button class="login" type="button" data-bs-toggle="collapse" data-bs-target="#collapse_login" aria-expanded="false" aria-controls="collapse_login">
                                     <img src="./images/user.png" alt="Identidad, usuario, login, sign up, avatar, register">
                                 </button>
+                                <div class="collapse" id="collapse_login">
+                                    <form>
+                                        <div class="form-floating mb-3">
+                                            <input type="email" class="form-control" id="usuario" name="usuario" placeholder="name@example.com">
+                                            <label for="usuario">Usuario</label>
+                                        </div>
+                                        <div class="form-floating">
+                                            <input type="password" class="form-control" id="contrasena" name="contrasena" placeholder="Password">
+                                            <label for="contrasena">Contraseña</label>
+                                        </div>
+                                        <button class="text_2" type="submit">
+                                            Ingresar
+                                        </button>
+                                    </form>
+                                </div>
                             </li>
                         </ul>
                     </div>

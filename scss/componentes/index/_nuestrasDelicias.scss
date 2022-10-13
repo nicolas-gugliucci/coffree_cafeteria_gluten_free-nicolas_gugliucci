@@ -20,8 +20,55 @@
             background-size: 400% 100%;
             animation: loading 8s ease-in-out infinite;
             margin-bottom: 30px;
+            a{
+                display: flex;
+                flex-direction: column;
+                @media screen and (max-width: 620px) {
+                    flex-direction: row;
+                    width: 100%;
+                }
+                img{
+                    @media screen and (max-width: 480px) {
+                        height: 120px;
+                    }
+                }
+                div{
+                    @media screen and (max-width: 620px) {
+                        justify-content: flex-start;
+                        align-items: flex-start;
+                    }
+                    h5{
+                        @media screen and (max-width: 620px) {
+                            font-size: 2.3rem !important;
+                            margin-bottom: 10px;
+                        }
+                        @media screen and (max-width: 480px) {
+                            font-size: 1.7rem !important;
+                        }
+                        @media screen and (max-width:320px) {
+                            font-size: 1.3rem !important;
+                        }
+                    }
+                    p{
+                        @media screen and (max-width: 620px) {
+                            font-size: 1.7rem !important;
+                            text-align: justify;
+                        }
+                        @media screen and (max-width: 480px) {
+                            font-size: 1.3rem !important;
+                        }
+                        @media screen and (max-width:320px) {
+                            font-size: 1rem !important;
+                            text-align: left;
+                        }
+                    }
+                }
+            }
             img{
                 border-radius: 10px;
+            }
+            @media screen and (max-width: 620px) {
+                height: auto;
             }
         }
         @keyframes loading {
@@ -32,22 +79,31 @@
                 background-position: -200% 0;
             }
         }
+        @media screen and (max-width: 620px) {
+            flex-direction: column;
+        }
     }
 } 
 
 @media screen and (max-width: 992px) {
     #nuestras_delicias_img_4{
-        display: none;  /*Irá como carrusel*/
+        display: none;
     }
 }
 @media screen and (max-width: 767px) {
     #nuestras_delicias_img_3{
-        display: none;  /*Irá como carrusel*/
+        display: none;
     }
 }
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 620px) {
+    #nuestras_delicias_img_4{
+        display: block;
+    }
+    #nuestras_delicias_img_3{
+        display: block;
+    }
     #nuestras_delicias_img_2{
-        display: none;  /*Irá como carrusel*/
+        display: block;
     }
 }
 

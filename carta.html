@@ -67,9 +67,24 @@
                                 </ol>
                             </li>
                             <li class="nav-item userr">
-                                <button class="login">
+                                <button class="login" type="button" data-bs-toggle="collapse" data-bs-target="#collapse_login" aria-expanded="false" aria-controls="collapse_login">
                                     <img src="./images/user.png" alt="Identidad, usuario, login, sign up, avatar, register">
                                 </button>
+                                <div class="collapse" id="collapse_login">
+                                    <form>
+                                        <div class="form-floating mb-3">
+                                            <input type="email" class="form-control" id="usuario" name="usuario" placeholder="name@example.com">
+                                            <label for="usuario">Usuario</label>
+                                        </div>
+                                        <div class="form-floating">
+                                            <input type="password" class="form-control" id="contrasena" name="contrasena" placeholder="Password">
+                                            <label for="contrasena">Contraseña</label>
+                                        </div>
+                                        <button class="text_2" type="submit">
+                                            Ingresar
+                                        </button>
+                                    </form>
+                                </div>
                             </li>
                         </ul>
                     </div>
@@ -114,7 +129,9 @@
 
 <div class="carta_container">
     <!-------------------------------------------------CAFÉS------------------------------------------------->
+    
     <section id="cafes" class="color_gradient_dark_blue">
+        <div class="astrodivider "><div class="astrodividermask"></div><span><i>&#10038;</i></span></div>
         <h2 class="text_2">Cafés</h2>
         <div id="products_container_1">
             <div class="card carta_card text-center" style="width: 28rem;">
@@ -167,6 +184,7 @@
 
     <!-------------------------------------------------JUGOS------------------------------------------------>
     <section id="jugos" class="color_gradient_dark_blue">
+        <div class="astrodivider "><div class="astrodividermask"></div><span><i>&#10038;</i></span></div>
         <h2 class="text_2">Jugos</h2>
         <div id="products_container_2">
             <div class="card carta_card text-center" style="width: 28rem;">
@@ -219,9 +237,10 @@
 
     <!-----------------------------------------------SALADOS----------------------------------------------->
     <section id="salados" class="color_gradient_dark_blue">
+        <div class="astrodivider "><div class="astrodividermask"></div><span><i>&#10038;</i></span></div>
         <h2 class="text_2">Salados</h2>
         <div id="products_container_3">
-            <div class="card carta_card text-center" style="width: 28rem;">
+            <div id="destacada_avocado" class="card carta_card text-center" style="width: 28rem;">
                 <img src="./images/salados_avocado_hummus_toast.jpg" class="card-img-top" alt="Tostada de pan casero, untada con palta y hummus de garbanzos, agregandole zanahoria en tiras, verdes y semillas de girasol">
                 <div class="card-body">
                     <h5 class="card-title">Avocado toast</h5>
@@ -240,7 +259,7 @@
                     </button>
                 </div>
             </div>
-            <div class="card carta_card text-center" style="width: 28rem;">
+            <div id="destacada_omelette" class="card carta_card text-center" style="width: 28rem;">
                 <img src="./images/salados_sandwich.jpg" class="card-img-top" alt="Crujiente sandwich de omelette combinado con las más frescas verduras">
                 <div class="card-body">
                     <h5 class="card-title">Omelette sandwich</h5>
@@ -294,6 +313,7 @@
 
     <!-------------------------------------------------DULCES---------------------------------------------->
     <section id="dulces" class="color_gradient_dark_blue">
+        <div class="astrodivider "><div class="astrodividermask"></div><span><i>&#10038;</i></span></div>
         <h2 class="text_2">Dulces</h2>
         <div id="products_container_4">
             <div class="card carta_card text-center" style="width: 28rem;">
@@ -354,7 +374,7 @@
                     </button>
                 </div>
             </div>
-            <div class="card carta_card text-center" style="width: 28rem;">
+            <div id="destacada_jelly" class="card carta_card text-center" style="width: 28rem;">
                 <img src="./images/dulces_mug.cake.jpg" class="card-img-top" alt="Delicioso mug cake de arándanos y frambuesas, super tierno, con una salsa de frutos rojos y arándanos enteros">
                 <div class="card-body">
                     <h5 class="card-title">Jelly mug cake</h5>
@@ -364,7 +384,7 @@
                     </button>
                 </div>
             </div>
-            <div class="card carta_card text-center" style="width: 28rem;">
+            <div id="destacada_berries" class="card carta_card text-center" style="width: 28rem;">
                 <img src="./images/dulces_pancakes.jpg" class="card-img-top" alt="Torre de panqueques con frutos rojos frescos y una riquísima salsa de chocolate">
                 <div class="card-body">
                     <h5 class="card-title">Berries pancakes</h5>
