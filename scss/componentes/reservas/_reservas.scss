@@ -14,7 +14,7 @@
 }
 
 #reservas .background{
-    background-image: url("../images/lugar2.png");
+    background-image: url("../images/lugar2.webp");
     background-size: cover;
     width: 100%;
     height: calc(100vh - (62px + 200px));
@@ -42,15 +42,15 @@
         margin-bottom: 20px;
     }
     label{
-        font-size: 1.3rem;
+        font-size: 1.5rem;
         @media screen and (max-width: 1023px) {
-            font-size: 1.2rem !important;
+            font-size: 1.4rem !important;
         }
         @media screen and (max-width: 480px) {
-            font-size: 1.1rem !important;
+            font-size: 1.3rem !important;
         }
         @media screen and (max-width: 380px) {
-            font-size: 1rem !important;
+            font-size: 1.2rem !important;
         }
     }
     .form-select{
@@ -58,15 +58,15 @@
         padding-top: 2rem;
     }
     option{
-        font-size: 1.4rem;
+        font-size: 1.5rem;
         @media screen and (max-width: 1023px) {
-            font-size: 1.3rem !important;
+            font-size: 1.4rem !important;
         }
         @media screen and (max-width: 480px) {
-            font-size: 1.2rem !important;
+            font-size: 1.3rem !important;
         }
         @media screen and (max-width: 380px) {
-            font-size: 1.1rem !important;
+            font-size: 1.2rem !important;
         }
     }
     @media screen and (max-width: 1023px) {

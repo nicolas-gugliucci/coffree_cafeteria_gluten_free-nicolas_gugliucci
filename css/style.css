@@ -109,17 +109,17 @@ button {
 }
 @media screen and (max-width: 1023px) {
   .card_buttonn {
-    font-size: 1.2rem !important;
+    font-size: 1.4rem !important;
   }
 }
 @media screen and (max-width: 480px) {
   .card_buttonn {
-    font-size: 0.9rem !important;
+    font-size: 1.3rem !important;
   }
 }
 @media screen and (max-width: 380px) {
   .card_buttonn {
-    font-size: 0.8rem !important;
+    font-size: 1.2rem !important;
   }
 }
 .card_buttonn:hover {
@@ -261,17 +261,17 @@ p, i {
 }
 @media screen and (max-width: 1023px) {
   p, i {
-    font-size: 1.3rem !important;
+    font-size: 1.4rem !important;
   }
 }
 @media screen and (max-width: 480px) {
   p, i {
-    font-size: 1.1rem !important;
+    font-size: 1.3rem !important;
   }
 }
 @media screen and (max-width: 380px) {
   p, i {
-    font-size: 1rem !important;
+    font-size: 1.2rem !important;
   }
 }
 
@@ -611,7 +611,7 @@ header .desplegado {
 }
 
 #nosotros .background {
-  background-image: url("../images/lugar3.png");
+  background-image: url("../images/lugar3.webp");
   height: 750px;
   background-attachment: fixed;
   background-position: center;
@@ -719,7 +719,7 @@ header .desplegado {
 }
 @media screen and (max-width: 320px) {
   #nuestras_delicias .nuestras_delicias_container .destacados a div p {
-    font-size: 1rem !important;
+    font-size: 1.2rem !important;
     text-align: left;
   }
 }
@@ -785,12 +785,12 @@ header .desplegado {
 }
 @media screen and (max-width: 767px) {
   .carta_nav {
-    top: 82px;
+    top: 169.6px;
   }
 }
 @media screen and (max-width: 480px) {
   .carta_nav {
-    top: 62px;
+    top: 78px;
   }
 }
 .carta_nav .container-fluid {
@@ -865,12 +865,12 @@ header .desplegado {
 }
 @media screen and (max-width: 767px) {
   .astrodivider {
-    margin: 85px auto 25px auto;
+    margin: 128.8px auto 68.8px auto;
   }
 }
 @media screen and (max-width: 480px) {
   .astrodivider {
-    margin: 67px auto 17px auto;
+    margin: 75px auto 25px auto;
   }
 }
 @media screen and (max-width: 330px) {
@@ -1032,7 +1032,7 @@ header .desplegado {
 }
 
 #reservas .background {
-  background-image: url("../images/lugar2.png");
+  background-image: url("../images/lugar2.webp");
   background-size: cover;
   width: 100%;
   height: calc(100vh - 262px);
@@ -1067,21 +1067,21 @@ header .desplegado {
   margin-bottom: 20px;
 }
 #reservas .color_brown label {
-  font-size: 1.3rem;
+  font-size: 1.5rem;
 }
 @media screen and (max-width: 1023px) {
   #reservas .color_brown label {
-    font-size: 1.2rem !important;
+    font-size: 1.4rem !important;
   }
 }
 @media screen and (max-width: 480px) {
   #reservas .color_brown label {
-    font-size: 1.1rem !important;
+    font-size: 1.3rem !important;
   }
 }
 @media screen and (max-width: 380px) {
   #reservas .color_brown label {
-    font-size: 1rem !important;
+    font-size: 1.2rem !important;
   }
 }
 #reservas .color_brown .form-select {
@@ -1089,21 +1089,21 @@ header .desplegado {
   padding-top: 2rem;
 }
 #reservas .color_brown option {
-  font-size: 1.4rem;
+  font-size: 1.5rem;
 }
 @media screen and (max-width: 1023px) {
   #reservas .color_brown option {
-    font-size: 1.3rem !important;
+    font-size: 1.4rem !important;
   }
 }
 @media screen and (max-width: 480px) {
   #reservas .color_brown option {
-    font-size: 1.2rem !important;
+    font-size: 1.3rem !important;
   }
 }
 @media screen and (max-width: 380px) {
   #reservas .color_brown option {
-    font-size: 1.1rem !important;
+    font-size: 1.2rem !important;
   }
 }
 @media screen and (max-width: 1023px) {
@@ -1236,7 +1236,7 @@ input:-webkit-autofill:active {
 /*-------------------CONTACTO-------------------*/
 #contacto_body {
   height: 100vh;
-  background-color: #B49082;
+  background-color: #A37C40;
 }
 
 .contacto_img_container {
@@ -1260,17 +1260,17 @@ input:-webkit-autofill:active {
 }
 @media screen and (max-width: 1023px) {
   .contacto-label {
-    font-size: 1.2rem !important;
+    font-size: 1.4rem !important;
   }
 }
 @media screen and (max-width: 480px) {
   .contacto-label {
-    font-size: 0.9rem !important;
+    font-size: 1.3rem !important;
   }
 }
 @media screen and (max-width: 380px) {
   .contacto-label {
-    font-size: 0.8rem !important;
+    font-size: 1.2rem !important;
   }
 }
 
@@ -1279,17 +1279,17 @@ input:-webkit-autofill:active {
 }
 @media screen and (max-width: 1023px) {
   #contacto input, #contacto textarea {
-    font-size: 1.2rem !important;
+    font-size: 1.4rem !important;
   }
 }
 @media screen and (max-width: 480px) {
   #contacto input, #contacto textarea {
-    font-size: 0.9rem !important;
+    font-size: 1.3rem !important;
   }
 }
 @media screen and (max-width: 380px) {
   #contacto input, #contacto textarea {
-    font-size: 0.8rem !important;
+    font-size: 1.2rem !important;
   }
 }
 
@@ -1320,12 +1320,12 @@ input:-webkit-autofill:active {
 #contacto button {
   border: black solid 1px;
   padding: 3px 5px;
-  background-color: #A37C40;
+  background-color: #98473E;
   color: black;
   margin: 2px 0 0 0;
   border-radius: 5px;
   transition: transform 250ms cubic-bezier(0.2, 0.8, 0.4, 1);
-  font-size: 1.2rem;
+  font-size: 1.5rem;
 }
 #contacto button p {
   margin: 0;
@@ -1333,17 +1333,17 @@ input:-webkit-autofill:active {
 }
 @media screen and (max-width: 1023px) {
   #contacto button {
-    font-size: 0.7rem !important;
+    font-size: 1.4rem !important;
   }
 }
 @media screen and (max-width: 480px) {
   #contacto button {
-    font-size: 0.4rem !important;
+    font-size: 1.3rem !important;
   }
 }
 @media screen and (max-width: 380px) {
   #contacto button {
-    font-size: 0.3rem !important;
+    font-size: 1.2rem !important;
   }
 }
 
@@ -1404,6 +1404,14 @@ footer {
   flex-direction: row;
   justify-content: space-between;
 }
+@media screen and (max-width: 480px) {
+  footer {
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    text-align: center;
+  }
+}
 footer div {
   margin-left: 10px;
 }
@@ -1431,7 +1439,7 @@ footer div a i {
 }
 @media screen and (max-width: 380px) {
   footer div a i {
-    font-size: 1rem;
+    font-size: 1.2rem;
   }
 }
 footer .space_around {
@@ -1457,8 +1465,8 @@ footer iframe {
 }
 @media screen and (max-width: 480px) {
   footer iframe {
-    width: 120px;
-    height: 120px;
+    width: 100vw;
+    height: 50vw;
   }
 }
 

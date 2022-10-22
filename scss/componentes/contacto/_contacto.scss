@@ -2,7 +2,7 @@
 
 #contacto_body{
     height: 100vh; 
-    background-color: #B49082;
+    background-color: $c-principal;
 }
 
 .contacto_img_container{
@@ -24,26 +24,26 @@
 .contacto-label{
     font-size: 1.5rem;
     @media screen and (max-width: 1023px) {
-        font-size: 1.2rem !important;
+        font-size: 1.4rem !important;
     }
     @media screen and (max-width: 480px) {
-        font-size: 0.9rem !important;
+        font-size: 1.3rem !important;
     }
     @media screen and (max-width: 380px) {
-        font-size: 0.8rem !important;
+        font-size: 1.2rem !important;
     }
 }
 
 #contacto input, #contacto textarea{
     font-size: 1.5rem;
     @media screen and (max-width: 1023px) {
-        font-size: 1.2rem !important;
+        font-size: 1.4rem !important;
     }
     @media screen and (max-width: 480px) {
-        font-size: 0.9rem !important;
+        font-size: 1.3rem !important;
     }
     @media screen and (max-width: 380px) {
-        font-size: 0.8rem !important;
+        font-size: 1.2rem !important;
     }
 }
 
@@ -74,22 +74,22 @@
 #contacto button {
     border: black solid 1px;
     padding: 3px 5px;
-    @include estilo (#A37C40, 2px, 0, 0, 0);
+    @include estilo ($c-secundario, 2px, 0, 0, 0);
     border-radius: 5px;
     transition: transform 250ms cubic-bezier(.2,.8,.4,1);
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     p{
         margin: 0;
         padding: 0;
     }
     @media screen and (max-width: 1023px) {
-        font-size: 0.7rem !important;
+        font-size: 1.4rem !important;
     }
     @media screen and (max-width: 480px) {
-        font-size: 0.4rem !important;
+        font-size: 1.3rem !important;
     }
     @media screen and (max-width: 380px) {
-        font-size: 0.3rem !important;
+        font-size: 1.2rem !important;
     }
 }
 
