@@ -38,8 +38,12 @@ footer{
     }
     iframe{
         padding: 5px;
-        width: 200px;
+        width: 350px;
         height: 200px;
+        @media screen and (max-width: 767px) {
+            width: 270px;
+            height: 120px;
+        }
         @media screen and (max-width: 480px) {
             width: 120px;
             height: 120px;

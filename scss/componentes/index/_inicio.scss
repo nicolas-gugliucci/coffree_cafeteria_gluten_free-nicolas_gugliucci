@@ -1,40 +1,6 @@
 #inicio{
         min-height: 100vh;
         height: fit-content;
-    // .carrusel{
-    //     height: 63vh;
-    //     min-width: 100%;
-    //     width: auto;
-    //     @media screen and (max-width: 992px) {
-    //         height: 69vh;
-    //         width: auto;
-    //     }
-    //     @media screen and (max-width: 767px) {
-    //         height: 64vh;
-    //         width: auto;
-    //     }
-    //     @media screen and (max-width: 480px) {
-    //         height: 67vh;
-    //         width: auto;
-    //     }
-    // }
-    // .carrusel_img{
-    //     height: 63vh;
-    //     min-width: 100% !important;
-    //     width: max-content !important;
-    //     @media screen and (max-width: 992px) {
-    //         height: 69vh;
-    //         width: max-content !important;
-    //     }
-    //     @media screen and (max-width: 767px) {
-    //         height: 64vh;
-    //         width: max-content !important;
-    //     }
-    //     @media screen and (max-width: 480px) {
-    //         height: 67vh;
-    //         width: max-content !important;
-    //     }
-    // }
     .carrusel_botones_container{
         button{
             border-top: 0px;
@@ -45,24 +11,33 @@
             border-radius: 50%;
             margin-left: 20px !important;
             margin-right: 20px !important;
-            background-color: #203A43 !important;
+            background-color: $c-principal !important;
         }
     }
     ;
     .container_botones_principales{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-evenly;
+        width: 100%;
+        padding: 0;
+        margin: 0;
         a{
+            display: flex;
+            align-items: center;
+            justify-content: center;
             text-align: center;
             margin: 20px;
             border-radius: 5%;
             width: 277px;
-            height: fit-content;
+            height: 65%;
             overflow: hidden;
             padding: 12px 24px;
             border-radius: 7px;
             background-color:  $c-principal;
             color: $c-secundario;
             position: relative;
-            display: inline-block;
             cursor: pointer;
             &:before{
                 content: "";
@@ -88,13 +63,14 @@
             span{
                 position: relative;
                 transition: color 0.6s cubic-bezier(0.53, 0.21, 0, 1);
+                height: 100%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: space-around;
                 img{
                     height: 80px;/**/
-                    width: auto;
-                    @media screen and (max-width: 767px) {
-                        height: 24px;
-                        width: 24px;
-                    }
+                    width: 80px;
                 }
             }
             @media screen and (max-width: 767px) {
@@ -102,7 +78,14 @@
             }
             @media screen and (max-width: 320px) {
                 width: 200px;
+                height: 170px;
             }
+        }
+        @media screen and (max-width: 600px) {
+            height: 60vh;
+        }
+        @media screen and (max-width: 480px) {
+            height: 80vh;
         }
     }
 }

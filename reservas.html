@@ -96,13 +96,7 @@
     <section id="reservas">
         <div  id="center_center" class="background">
             <div class="color_brown" data-aos="zoom-in">
-                <nav>
-                    <ol class="text_2">
-                        <li class="selected">1. Inicio</li>
-                        <li>2. Contacto</li>
-                        <li>3. Confirmación</li>
-                    </ol>
-                </nav>
+                <h3 class="text_3">Realiza tu reserva</h3>
                 <form class="continuar">
                     <div class="row">
                         <div class="col">
@@ -129,14 +123,49 @@
                             </div>
                         </div>
                     </div>
-                    <!--INSERTAR CALENDARIO-->
+                    <div class="calendar">
+                        <input type="radio" class="btn-check" name="options" id="lunes" autocomplete="off" checked>
+                        <label class="btn btn-secondary calendario_boton" for="lunes">Lunes</label>
+
+                        <input type="radio" class="btn-check" name="options" id="martes" autocomplete="off">
+                        <label class="btn btn-secondary calendario_boton" for="martes">Martes</label>
+                        
+                        <input type="radio" class="btn-check" name="options" id="miercoles" autocomplete="off">
+                        <label class="btn btn-secondary calendario_boton" for="miercoles">Miércoles</label>
+                        
+                        <input type="radio" class="btn-check" name="options" id="jueves" autocomplete="off">
+                        <label class="btn btn-secondary calendario_boton" for="jueves">Jueves</label>
+                                                
+                        <input type="radio" class="btn-check" name="options" id="viernes" autocomplete="off">
+                        <label class="btn btn-secondary calendario_boton" for="viernes">Viernes</label>
+
+                        <input type="radio" class="btn-check" name="options" id="sabado" autocomplete="off">
+                        <label class="btn btn-secondary calendario_boton" for="sabado">Sábado</label>
+                    </div>
+                    <div class="row">
+                        <div class="text_2 mb-3 col">
+                            <label for="nombre_r" class="form-label">Nombre</label>
+                            <input type="text" class="form-control" id="nombre_r" name="nombre_r" required>
+                        </div>
+                        <div class="text_2 mb-3 col">
+                            <label for="apellido_r" class="form-label">Apellido</label>
+                            <input type="text" class="form-control" id="apellido_r" name="apellido_r" required>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="text_2 mb-3 col">
+                            <label for="email_r" class="form-label">Dirección de correo</label>
+                            <input type="email" class="form-control" id="email_r" name="email_r" required>
+                        </div>
+                        <div class="text_2 mb-3 col">
+                            <label for="telefono_r" class="form-label">Número de teléfono</label>
+                            <input type="tel" class="form-control" id="telefono_r" name="telefono_r" required>
+                        </div>
+                    </div>
                     <button class="text_2" type="submit">
-                        Comprobar
+                        Reservar
                     </button>
                 </form>
-                <button class="text_2 end">
-                    <a href="./reservas/paso_contacto.html">Continuar</a>
-                </button>
             </div>
         </div>
     </section>

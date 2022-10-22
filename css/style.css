@@ -10,6 +10,10 @@
   text-decoration: none;
   list-style: none;
 }
+*::selection {
+  color: #A37C40;
+  background-color: #622e28;
+}
 
 html {
   font-size: 62.5%;
@@ -27,6 +31,10 @@ a {
 }
 a:hover {
   color: initial;
+}
+a::selection {
+  color: #A37C40;
+  background-color: #98473E;
 }
 
 .color_dark-brown_gradient {
@@ -101,17 +109,17 @@ button {
 }
 @media screen and (max-width: 1023px) {
   .card_buttonn {
-    font-size: 1.1rem !important;
+    font-size: 1.2rem !important;
   }
 }
 @media screen and (max-width: 480px) {
   .card_buttonn {
-    font-size: 0.8rem !important;
+    font-size: 0.9rem !important;
   }
 }
 @media screen and (max-width: 380px) {
   .card_buttonn {
-    font-size: 0.7rem !important;
+    font-size: 0.8rem !important;
   }
 }
 .card_buttonn:hover {
@@ -120,6 +128,9 @@ button {
 }
 .card_buttonn:active {
   transform: scale(0.9);
+}
+.card_buttonn p {
+  margin-bottom: 0;
 }
 
 .card {
@@ -187,6 +198,7 @@ button {
   border-radius: 10px;
 }
 
+/*------------------------------TEXTO------------------------------*/
 h2 {
   font-size: 3rem !important;
 }
@@ -230,17 +242,17 @@ h5 {
 }
 @media screen and (max-width: 1023px) {
   h5 {
-    font-size: 1.3rem !important;
+    font-size: 1.6rem !important;
   }
 }
 @media screen and (max-width: 480px) {
   h5 {
-    font-size: 1rem !important;
+    font-size: 1.3rem !important;
   }
 }
 @media screen and (max-width: 380px) {
   h5 {
-    font-size: 0.9rem !important;
+    font-size: 1.2rem !important;
   }
 }
 
@@ -249,17 +261,17 @@ p, i {
 }
 @media screen and (max-width: 1023px) {
   p, i {
-    font-size: 1.1rem !important;
+    font-size: 1.3rem !important;
   }
 }
 @media screen and (max-width: 480px) {
   p, i {
-    font-size: 0.8rem !important;
+    font-size: 1.1rem !important;
   }
 }
 @media screen and (max-width: 380px) {
   p, i {
-    font-size: 0.7rem !important;
+    font-size: 1rem !important;
   }
 }
 
@@ -286,6 +298,12 @@ header .header_logo img {
     height: auto;
   }
 }
+@media screen and (max-width: 767px) {
+  header .header_logo img {
+    width: 60px;
+    height: auto;
+  }
+}
 @media screen and (max-width: 480px) {
   header .header_logo img {
     width: 25px;
@@ -300,9 +318,19 @@ header .header_logo h1 {
     font-size: 2.4rem;
   }
 }
+@media screen and (max-width: 767px) {
+  header .header_logo h1 {
+    font-size: 5rem;
+  }
+}
 @media screen and (max-width: 480px) {
   header .header_logo h1 {
     font-size: 1.4rem;
+  }
+}
+@media screen and (max-width: 767px) {
+  header .header_logo {
+    flex-direction: column;
   }
 }
 header nav {
@@ -457,18 +485,23 @@ header .desplegado {
 .userr {
   display: flex;
   flex-direction: column;
-  align-items: flex-end;
+  align-items: center;
+}
+@media screen and (max-width: 767px) {
+  .userr {
+    align-items: flex-start;
+  }
 }
 .userr form {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-end;
 }
 .userr form button {
   align-self: flex-end;
   margin-right: 10px;
   padding: 2px 5px 0 5px;
-  border: black solid 1px;
+  border: none;
   background-color: #98473E;
   border-radius: 2px;
   transition: transform 250ms cubic-bezier(0.2, 0.8, 0.4, 1);
@@ -493,21 +526,32 @@ header .desplegado {
   border-radius: 50%;
   margin-left: 20px !important;
   margin-right: 20px !important;
-  background-color: #203A43 !important;
+  background-color: #A37C40 !important;
+}
+#inicio .container_botones_principales {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 100%;
+  padding: 0;
+  margin: 0;
 }
 #inicio .container_botones_principales a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   text-align: center;
   margin: 20px;
   border-radius: 5%;
   width: 277px;
-  height: fit-content;
+  height: 65%;
   overflow: hidden;
   padding: 12px 24px;
   border-radius: 7px;
   background-color: #A37C40;
   color: #98473E;
   position: relative;
-  display: inline-block;
   cursor: pointer;
 }
 #inicio .container_botones_principales a:before {
@@ -534,16 +578,15 @@ header .desplegado {
 #inicio .container_botones_principales a span {
   position: relative;
   transition: color 0.6s cubic-bezier(0.53, 0.21, 0, 1);
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
 }
 #inicio .container_botones_principales a span img {
   height: 80px; /**/
-  width: auto;
-}
-@media screen and (max-width: 767px) {
-  #inicio .container_botones_principales a span img {
-    height: 24px;
-    width: 24px;
-  }
+  width: 80px;
 }
 @media screen and (max-width: 767px) {
   #inicio .container_botones_principales a {
@@ -553,6 +596,17 @@ header .desplegado {
 @media screen and (max-width: 320px) {
   #inicio .container_botones_principales a {
     width: 200px;
+    height: 170px;
+  }
+}
+@media screen and (max-width: 600px) {
+  #inicio .container_botones_principales {
+    height: 60vh;
+  }
+}
+@media screen and (max-width: 480px) {
+  #inicio .container_botones_principales {
+    height: 80vh;
   }
 }
 
@@ -566,10 +620,10 @@ header .desplegado {
   justify-content: center;
 }
 #nosotros .background #nosotros_all {
-  background-color: rgba(180, 144, 130, 0.85);
+  background-color: rgba(180, 144, 130, 0.9);
   width: 60%;
   height: auto;
-  border: #A37C40 solid 10px;
+  border: #A37C40 double 10px;
 }
 #nosotros .background #nosotros_all p {
   text-align: justify;
@@ -928,23 +982,36 @@ header .desplegado {
     width: 80% !important;
     height: 150px;
     flex-direction: row;
-    overflow: hidden;
+    overflow-y: hidden;
   }
   .card img {
     height: 165px;
     width: auto;
   }
+  .card button {
+    width: 50%;
+    margin-bottom: 0;
+  }
 }
 @media screen and (max-width: 480px) {
-  /*---------------------CARTA---------------------*/
   .carta_nav img {
     width: 12px;
     height: auto;
   }
 }
-@media screen and (max-width: 320px) {
-  .carta_card {
-    width: 20rem !important;
+@media screen and (max-width: 300px) {
+  .card {
+    height: 165px;
+  }
+  .card div {
+    padding-bottom: 2px;
+    padding-top: 2px;
+  }
+  .card div h5 {
+    margin-bottom: 0;
+  }
+  .card div p {
+    margin-bottom: 0;
   }
 }
 /*-------------------RESERVAS-------------------*/
@@ -968,87 +1035,90 @@ header .desplegado {
   background-image: url("../images/lugar2.png");
   background-size: cover;
   width: 100%;
-  height: calc(100vh - 222px);
+  height: calc(100vh - 262px);
 }
 @media screen and (max-width: 992px) {
   #reservas .background {
-    height: calc(100vh - 206px);
+    height: calc(100vh - 246px);
   }
 }
 @media screen and (max-width: 767px) {
   #reservas .background {
-    height: calc(100vh - 242px);
+    height: calc(100vh - 290.5px);
   }
 }
 @media screen and (max-width: 480px) {
   #reservas .background {
-    height: calc(100vh - 182px);
+    height: calc(100vh - 222px);
   }
 }
 
 #reservas .color_brown {
   font-size: 1.5rem;
-  background-color: rgba(180, 144, 130, 0.85);
-  height: auto;
+  background-color: rgba(180, 144, 130, 0.95);
+  height: 97%;
   width: fit-content;
   width: -moz-fit-content;
   min-height: 250px;
-  border: #A37C40 solid 10px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-content: space-between;
-  align-items: center;
+  border: #A37C40 double 10px;
+  text-align: center;
+}
+#reservas .color_brown h3 {
+  margin-bottom: 20px;
 }
 #reservas .color_brown label {
-  font-size: 1rem;
+  font-size: 1.3rem;
 }
 @media screen and (max-width: 1023px) {
   #reservas .color_brown label {
-    font-size: 0.7rem !important;
-  }
-}
-@media screen and (max-width: 480px) {
-  #reservas .color_brown label {
-    font-size: 0.4rem !important;
-  }
-}
-@media screen and (max-width: 380px) {
-  #reservas .color_brown label {
-    font-size: 0.3rem !important;
-  }
-}
-#reservas .color_brown option {
-  font-size: 1.2rem;
-}
-@media screen and (max-width: 1023px) {
-  #reservas .color_brown option {
-    font-size: 0.9rem !important;
-  }
-}
-@media screen and (max-width: 480px) {
-  #reservas .color_brown option {
-    font-size: 0.6rem !important;
-  }
-}
-@media screen and (max-width: 380px) {
-  #reservas .color_brown option {
-    font-size: 0.5rem !important;
-  }
-}
-@media screen and (max-width: 1023px) {
-  #reservas .color_brown {
     font-size: 1.2rem !important;
   }
 }
 @media screen and (max-width: 480px) {
+  #reservas .color_brown label {
+    font-size: 1.1rem !important;
+  }
+}
+@media screen and (max-width: 380px) {
+  #reservas .color_brown label {
+    font-size: 1rem !important;
+  }
+}
+#reservas .color_brown .form-select {
+  height: 40px;
+  padding-top: 2rem;
+}
+#reservas .color_brown option {
+  font-size: 1.4rem;
+}
+@media screen and (max-width: 1023px) {
+  #reservas .color_brown option {
+    font-size: 1.3rem !important;
+  }
+}
+@media screen and (max-width: 480px) {
+  #reservas .color_brown option {
+    font-size: 1.2rem !important;
+  }
+}
+@media screen and (max-width: 380px) {
+  #reservas .color_brown option {
+    font-size: 1.1rem !important;
+  }
+}
+@media screen and (max-width: 1023px) {
   #reservas .color_brown {
-    font-size: 0.9rem !important;
+    font-size: 1.4rem !important;
+  }
+}
+@media screen and (max-width: 480px) {
+  #reservas .color_brown {
+    font-size: 1.3rem !important;
   }
 }
 @media screen and (max-width: 380px) {
   #reservas .color_brown {
-    font-size: 0.8rem !important;
+    font-size: 1.2rem !important;
   }
 }
 
@@ -1109,9 +1179,8 @@ header .desplegado {
   display: flex;
   flex-direction: column;
   align-items: center;
-}
-.continuar button {
-  margin-top: 30px !important;
+  justify-content: space-around;
+  height: 90%;
 }
 
 .confirmar {
@@ -1119,21 +1188,43 @@ header .desplegado {
   flex-direction: column;
 }
 
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+  -webkit-box-shadow: 0 0 0 30px #98473E inset !important;
+  -webkit-text-fill-color: wheat !important;
+}
+
+/*-------------------Calendario-------------------*/
+.calendar {
+  margin: 20px 5px;
+}
+
+.calendario_boton {
+  background-color: #d1958f;
+  border: none;
+  color: black;
+}
+
+.btn-check:checked + .btn, .btn.active, .btn.show, .btn:first-child:active, :not(.btn-check) + .btn:active {
+  background-color: #98473E;
+  border: none;
+  color: black;
+}
+
 @media screen and (max-width: 767px) {
-  /*-------------------RESERVAS-------------------*/
   #reservas .color_brown {
     width: fit-content;
     width: -moz-fit-content;
   }
 }
 @media screen and (max-width: 600px) {
-  /*-------------------RESERVAS-------------------*/
   #reservas .color_brown, #reservas button a {
     font-size: 1.2rem;
   }
 }
 @media screen and (max-width: 320px) {
-  /*-------------------RESERVAS-------------------*/
   #reservas .color_brown {
     width: 100%;
     border: none;
@@ -1165,7 +1256,6 @@ header .desplegado {
 }
 
 .contacto-label {
-  color: #A37C40;
   font-size: 1.5rem;
 }
 @media screen and (max-width: 1023px) {
@@ -1185,7 +1275,6 @@ header .desplegado {
 }
 
 #contacto input, #contacto textarea {
-  color: #A37C40;
   font-size: 1.5rem;
 }
 @media screen and (max-width: 1023px) {
@@ -1237,6 +1326,10 @@ header .desplegado {
   border-radius: 5px;
   transition: transform 250ms cubic-bezier(0.2, 0.8, 0.4, 1);
   font-size: 1.2rem;
+}
+#contacto button p {
+  margin: 0;
+  padding: 0;
 }
 @media screen and (max-width: 1023px) {
   #contacto button {
@@ -1353,8 +1446,14 @@ footer .space_around {
 }
 footer iframe {
   padding: 5px;
-  width: 200px;
+  width: 350px;
   height: 200px;
+}
+@media screen and (max-width: 767px) {
+  footer iframe {
+    width: 270px;
+    height: 120px;
+  }
 }
 @media screen and (max-width: 480px) {
   footer iframe {

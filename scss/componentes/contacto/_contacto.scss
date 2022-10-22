@@ -22,7 +22,6 @@
 }   
 
 .contacto-label{
-    color:#A37C40;
     font-size: 1.5rem;
     @media screen and (max-width: 1023px) {
         font-size: 1.2rem !important;
@@ -36,7 +35,6 @@
 }
 
 #contacto input, #contacto textarea{
-    color: #A37C40;
     font-size: 1.5rem;
     @media screen and (max-width: 1023px) {
         font-size: 1.2rem !important;
@@ -80,6 +78,10 @@
     border-radius: 5px;
     transition: transform 250ms cubic-bezier(.2,.8,.4,1);
     font-size: 1.2rem;
+    p{
+        margin: 0;
+        padding: 0;
+    }
     @media screen and (max-width: 1023px) {
         font-size: 0.7rem !important;
     }

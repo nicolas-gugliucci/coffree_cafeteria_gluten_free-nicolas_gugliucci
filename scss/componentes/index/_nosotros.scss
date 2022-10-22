@@ -8,10 +8,10 @@
     @extend %flexac;
     justify-content: center;
     #nosotros_all{
-        background-color: rgba($color: $c-terciario, $alpha: 0.85);
+        background-color: rgba($color: $c-terciario, $alpha: 0.90);
         width: 60%;
         height: auto;
-        border: $c-principal solid 10px;
+        border: $c-principal double 10px;
         p{
             text-align: justify;
             margin-right: 10px;
